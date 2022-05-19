@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Invata chimie este un site care are ca scop aprofundarea cunostintelor elevilor la chimie cat si un suport pentru elevii care dau admitere la chimie">
+    <link rel="stylesheet" href="StyleLectii.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Compusi carbonilici</title>
+  </head>
+  <body onload="newQuote()">
+    <nav>
+      <div class="logo"><img src="logo.png" alt=""></div>
+      <label for="btn" class="icon">
+          <span class="fas fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul>
+         <li><a href="index.html" style="text-decoration:none">Acasa</a></li>
+         <li>
+             <label for="btn-1" class="show">Clasa a IX-a</label>
+             <a href="#" style="text-decoration:none">Clasa a IX-a</a>
+             <input type="checkbox" id="btn-1">
+             <ul>
+                 <li><a href="Atomul.html" style="text-decoration:none">Atomul</a></li>
+                 <li><a href="Proprietatile elementelor.html" style="text-decoration:none;padding: 0%;" class="btns">Proprietățile elementelor</a></li>
+                 <li><a href="corelatii.html" style="text-decoration:none;padding: 0%;" class="btns">Corelații între structura învelișului de electroni, poziția în tabelul periodic și proprietațile elementelor</a></li>
+             </ul>
+          </li>
+          <li>
+              <label for="btn-2" class="show">Clasa a X-a</label>
+              <a href="#" style="text-decoration:none">Clasa a X-a</a>
+              <input type="checkbox" id="btn-2">
+              <ul>
+              </ul>
+          </li>
+          <li>
+              <label for="btn-3" class="show">Clasa a XI-a</label>
+              <a href="#" style="text-decoration:none">Clasa a XI-a</a>
+              <input type="checkbox" id="btn-3">
+              <ul>
+                <li><a href="Izomeria geometrica.html" style="text-decoration:none;padding: 0%;" class="btns">Izomeria<br>optică</a></li>
+                <li><a href="Compusi halogenati.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși halogenați</a></li>
+                <li><a href="Alcooli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Alcooli</a></li>
+                <li><a href="Fenoli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Fenoli</a></li>
+                <li><a href="Amine.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Amine</a></li>
+                <li><a href="Compusi carbonilici.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși<br>carbonilici</a></li>
+              </ul>
+          </li>
+          <li>
+            <label for="btn-5" class="show">Teste de antrenament</label>
+            <a href="#" style="text-decoration:none">Teste de antrenament</a>
+            <input type="checkbox" id="btn-5">
+            <ul>
+              <li><a href="teste anorganica.html" style="text-decoration:none;padding: 0%;" class="btns">Chimie anorganică</a></li>
+              <li><a href="teste organica.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Chimie organică</a></li>
+            </ul>
+        </li>
+          <li>
+            <label for="btn-4" class="show"><a href="manuale.html">Manuale și culegeri</a></label>
+            <a href="manuale.html" style="text-decoration:none">Manuale și culegeri</a>
+            <input type="checkbox" id="btn-4">
+        </li>
+          <li>
+            <label for="btn-4" class="show"><a href="contact.html">Contact</a></label>
+            <a href="contact.html" style="text-decoration:none">Contact</a>
+            <input type="checkbox" id="btn-4">
+
+        </li>
+      </ul>
+  </nav>
+    <div class="bg-image container-fluid">
+      <div id="clockDisplay" class="containerclock"></div>
+      <h1>Compuși carbonilici</h1>
+      <p>Compușii carboxilici se mai numesc și acizi carboxilici.</p>
+      <p>Definiție: Acizii carboxilici sunt compuși organici, care conțin în  moleculă gruparea funcțională carboxil (–COOH ).</p>
+      <p>Formula generală a acizilor carboxilici este: R – COOH. </p>
+      <p>Formula generală pentru acizii:</p>
+      <ul class="showul">
+        <li>monocarboxilici saturați cu catenă aciclică : C<sub>n</sub>H<sub>2n</sub>O<sub>2</sub></li>
+        <li>monocarboxilici monoaromatici cu catenă laterală saturată : C<sub>n</sub>H<sub>2n-8</sub>O<sub>2</sub></li>
+        <li>dicarboxilici monoaromatici cu catenă laterală saturată : C<sub>n</sub>H<sub>2n-10</sub>O<sub>4</sub></li>
+      </ul>
+      <h1>Clasificare</h1>
+      <ul class="showul">
+        <li>După natura radicalului hidrocarbonat, pot fi:
+          <ul class="showul">
+            <li>acizi saturați: CH<sub>3</sub> – COOH acid etanoic (I.U.P.A.C.) sau acid acetic </li>
+            <li>acizi nesaturați: CH<sub>2</sub> = CH – COOH acid propenoic (I.U.P.A.C.) sau  acid acrilic (denumire uzuală)<br>CH ≡ C – CH<sub>2</sub> – COOH acid 3-butinoic (I.U.P.A.C.)<br><img src="162.png" alt="" class="forimgmxx"></li>
+            <li>acizi aromatici: C<sub>6</sub>H<sub>5</sub> – COOH acid benzencarboxilic (I.U.P.A.C.) sau  acid benzoic (denumire uzuală) </li>
+          </ul>
+        </li>
+        <li>După numărul de grupe carboxil din moleculă, pot fi: 
+          <ul class="showul">
+            <li>acizi monocarboxilici (acizi cu o singură grupă „– COOH” )</li>
+            <li>acizi di- sau policarboxilici<br><img src="163.png" alt="" class="forimgx"></li>
+          </ul>
+        </li>
+      </ul>
+      <p>Grupa carboxil are prioritate la numerotare, în fața legăturilor duble,  triple și a celorlalte gupări învățate până acum, respectiv nitro (-NO<sub>2</sub>),  halogeno (-X), hidroxil (-OH din alcooli și fenoli), amino (-NH<sub>2</sub>), carbonil  (>C=O), ciano (-CN).</p>
+      <h1>Structura grupării carboxil</h1>
+      <p>Gruparea carboxil este o grupare funcțională, trivalentă, plană, cu atomul  de carbon hibridizat sp<sup>2</sup> și formată dintr-o grupare carbonil și una hidroxil. Cele  două grupări, datorită conjugării care apare între electronii neparticipanți ai  atomului de oxigen a grupării –OH și electronii π ai grupei carbonil își pierd  individualitatea, gruparea carbonil își pierde caracterul nesaturat, iar densitatea  electronică a grupării –OH scade, aceasta mărindu-și aciditatea.  </p>
+      <img src="164.png" alt="" class="forimgx">
+      <p>Grupa –OH din compușii carboxilici are un caracter acid mai accentuat  comparativ cu grupările –OH din alcooli și fenoli.</p>
+      <img src="165.png" alt="" class="forimgx">
+      <h1>Izomerie</h1>
+      <p>Acizii carboxilici pot prezenta următoarele tipuri de izomerie: de catenă, de  poziție, de funcțiune, geometrică și optică. Acizii sunt izomeri de funcțiune cu  esterii, hidroxialdehidele, hidroxicetonele, aldoeterii și cetoeterii.</p>
+      <h1>Proprietăți fizice</h1>
+      <p>Acizii inferiori au miros înțepător și sunt lichizi, iar cei superiori, cei  aromatici și cei dicarboxilici sunt solizi. Acidul formic și acidul acetic sunt  miscibili cu apa, termenii mijlocii au mirosuri neplăcute și solubilitate scăzută.  Acizii superiori (peste C<sub>10</sub>) sunt insolubili în apă și nu au miros. </p>
+      <p>Acidul acetic pur se solidifică la +16,6 <sup>0</sup>C, iar cristalele au aspect de gheață.  De aceea acidul acetic pur mai este numit și acid acetic glacial. Acidul benzoic este o substanță solidă cristalină, care sublimează.</p>
+      <p>Punctele de topire și de fierbere cresc cu masa moleculară și sunt mai mari  decât ale altor substanțe organice cu același număr de atom de carbon (derivați  halogenati, amine, alcooli) și catenă asemănătoare, deoarece moleculele  acizilor se asociază prin legături de hidrogen. În cazul acizilor, legăturile de  hidrogen se formează de prefență între două molecule (asocieri sub formă de  dimeri): </p>
+      <img src="166.png" alt="" class="forimgx">
+      <p>Legături de hidrogen se formează și între acizii inferiori și moleculele de  apă în care sunt solubili. </p>
+      <p>Acizii cu catenă ramificată au puncte de fierbere mai ridicate decât izomerii  corespunzători cu catenă liniară. </p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="StyleLectii.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <title>Fenoli</title>
+</head>
+<body class="container-fluid" onload="renderTime()">
+    <nav>
+        <div class="logo"><img src="logo.png" alt=""></div>
+        <label for="btn" class="icon">
+            <span class="fas fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+           <li><a href="index.html" style="text-decoration:none">Acasa</a></li>
+           <li>
+               <label for="btn-1" class="show">Clasa a IX-a</label>
+               <a href="#" style="text-decoration:none">Clasa a IX-a</a>
+               <input type="checkbox" id="btn-1">
+               <ul>
+                   <li><a href="Atomul.html" style="text-decoration:none">Atomul</a></li>
+                   <li><a href="Proprietatile elementelor.html" style="text-decoration:none;padding: 0%;" class="btns">Proprietățile elementelor</a></li>
+                   <li><a href="corelatii.html" style="text-decoration:none;padding: 0%;" class="btns">Corelații între structura învelișului de electroni, poziția în tabelul periodic și proprietațile elementelor</a></li>
+               </ul>
+            </li>
+            <li>
+                <label for="btn-2" class="show">Clasa a X-a</label>
+                <a href="#" style="text-decoration:none">Clasa a X-a</a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-3" class="show">Clasa a XI-a</label>
+                <a href="#" style="text-decoration:none">Clasa a XI-a</a>
+                <input type="checkbox" id="btn-3">
+                <ul>
+                  <li><a href="Izomeria geometrica.html" style="text-decoration:none;padding: 0%;" class="btns">Izomeria<br>optică</a></li>
+                  <li><a href="Compusi halogenati.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși halogenați</a></li>
+                  <li><a href="Alcooli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Alcooli</a></li>
+                  <li><a href="Fenoli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Fenoli</a></li>
+                  <li><a href="Amine.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Amine</a></li>
+                  <li><a href="Compusi carbonilici.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși<br>carbonilici</a></li>
+                </ul>
+            </li>
+            <li>
+              <label for="btn-5" class="show">Teste de antrenament</label>
+              <a href="#" style="text-decoration:none">Teste de antrenament</a>
+              <input type="checkbox" id="btn-5">
+              <ul>
+                <li><a href="teste anorganica.html" style="text-decoration:none;padding: 0%;" class="btns">Chimie anorganică</a></li>
+                <li><a href="teste organica.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Chimie organică</a></li>
+              </ul>
+          </li>
+            <li>
+              <label for="btn-4" class="show"><a href="manuale.html">Manuale și culegeri</a></label>
+              <a href="manuale.html" style="text-decoration:none">Manuale și culegeri</a>
+              <input type="checkbox" id="btn-4">
+          </li>
+            <li>
+              <label for="btn-4" class="show"><a href="contact.html">Contact</a></label>
+              <a href="contact.html" style="text-decoration:none">Contact</a>
+              <input type="checkbox" id="btn-4">
+  
+          </li>
+        </ul>
+    </nav>
+    <div id="clockDisplay" class="containerclock"></div>
+    <h1>Fenoli</h1>
+    <p>Definiție: Fenolii sunt compuși organici, care conțin gruparea funcțională hidroxil (–OH) legată de un atom de carbon al unui nucleu aromatic. Fenolii au formula generală: Ar – OH.</p>
+    <p>Fenolii sunt izomeri de funcțiune cu alcoolii aromatici sau polinesaturați și cu eterii micști.</p>
+    <p>Clasificare:</p>
+    <ul class="showul">
+    <li>După numărul de grupe hidroxil din moleculă, pot fi:
+        <ul class="showul">
+            <li>fenoli monohidroxilici:<br><img src="31.png" alt="" class="forimgmx"></li>
+            <li>fenoli polihidroxilici:<br><img src="32.png" alt="" class="forimgmx"></li>
+        </ul>
+    </li>
+    <li>După numărul de cicluri aromatice din moleculă, fenolii pot fi :
+        <ul class="showul">
+            <li>fenoli care provin de la benzen (cu un singur nucleu aromatic);</li>
+            <li>fenoli care provin de la naftalină (cu două cicluri aromatice condensate).</li>
+        </ul>
+    </li>
+    </ul>
+    <h1>Metode de obținere</h1>
+    <h5>Topirea sărurilor acizilor sulfonici ai arenelor cu hidroxizi alcalini</h5>
+    <img src="131.png" alt="" class="forimgmx">
+    <p>Această metodă se aplică în special pentru obținerea naftolilor.</p>
+    <img src="132.png" alt="" class="forimgmx"><br>
+    <img src="133.png" alt="" class="forimgmx">
+    <h5>Oxidarea izopropilbenzenului</h5>
+    <p>Este o metodă aplicată industrial. Prin alchilarea benzenului cu propenă (obținută din gazele de cracare) se obține izopropilbenzen. Acesta (cumenul) prin oxidare la 120 <sup>0</sup>C cu oxigen molecular, formează hidroperoxid de cumen, care în prezența acidului sulfuric diluat trece în fenol și acetonă.</p>
+    <img src="134.png" alt="" class="forimgmx">
+    <h5>Reacția de hidroliză</h5>
+    <ol style="list-style-type: lower-alpha;">
+        <li>hidroliza sărurilor de diazoniu
+            <br>
+            <img src="135.png" alt="" class="forimgmx">
+        </li>
+        <li>hidroliza bazică a clorobenzenului
+            <br>
+            Rar folosită din cauza condițiilor energice de lucru (derivat halogenat cu reactivitate scăzută  legătura C – Cl este foarte puternică și greu de rupt):<br>
+            <img src="136.png" alt="" class="forimgmx">
+        </li>
+    </ol>
+    <h1>Proprietăți fizice</h1>
+    <p>La temperatura obișnuită fenolii sunt substanțe solide, cristaline, cu miros caracteristic pătrunzător (naftolii sunt inodori). Punctele de topire cresc cu creșterea numărului de grupe – OH din moleculă. Fenolul are p.t. = + 43°C.</p>
+    <p>În fenoli apar legături de hidrogen intermoleculare și intramoleculare (dacă structura permite – de ex. la pirocatechina, pirogalol, etc.)</p>
+    <img src="33.png" alt="" class="forimgs">
+    <p>Solubilitatea fenolilor în apă crește cu creșterea numărului de grupe hidroxil din moleculă (polifenolii sunt solubili în apă) și scade cu creșterea catenei. Fenolii monohidroxilici sunt puțin solubili în apă (de ex. fenolul 6,7%, iar crezolii sub 2%).</p>
+    <p>Fenolul proaspăt preparat se prezintă sub formă de cristale incolore, higroscopice. în aer se autooxidează și cristalele se colorează în roșu brun. Este toxic și se manipulează cu atenție, deoarece produce arsuri. Crezolii au proprietăți bactericide mai puternice decât fenolul.</p>
+    <h1>Proprietăți chimice</h1>
+    <p>Proprietățile chimice ale fenolilor se datorează influenței reciproce dintre nucleul aromatic și grupa funcțională hidroxil (– OH) din molecula ei.</p>
+    <img src="34.png" alt="" class="forimgmx">
+    <p>Grupa hidroxil legată de un atom de carbon al unui nucleu aromatic, accentuează atragerea electronilor din legătura hidroxil (– O – H) de atomul de oxigen. Iar această atracție conduce la slăbirea legăturii dintre oxigen și hidrogen și la creșterea caracterului acid al fenolilor. Fenolii participă la două tipuri de reacții:</p>
+    <ol>
+        <li>reacții determinate de prezența grupei hidroxil (comune cu alcoolii);</li>
+        <li>reacții determinate de nucleul benzenic (reacții asemănătoare cu arenele)</li>
+    </ol>
+    <h3>Reacții determinate de grupa hidroxil (– OH)</h3>
+    <ol>
+        <li>Caracterul acid al fenolilor<br>Fenolii au un caracter foarte slab acid. Față de alcooli care reacționează numai cu metalele alcaline, fenolii reacționează și cu hidroxizii alcalini formând fenoxizi.<br><img src="35.png" alt="" class="forimgx"><br>Faptul că fenolii reacționează atât cu matalele alcaline cât și cu hidroxizii, dovedește că au un caracter acid mai pronunțat decât alcoolii. Acest lucru se datorează influenței nucleului aromatic asupra grupei hidroxil (– OH) mărind aciditatea fenolilor. Ionul fenoxid (C<sub>6</sub>H<sub>5</sub>O <sup>-</sup> ) este stabil în mediu apos, iar în reacție cu acizii formează fenol.<br><img src="36.png" alt="" class="forimgx"></li>
+        <li>Reacția de esterificare<br>Fenolii nu reacționează direct cu acizii carboxilici cum se întâmplă în cazul alcoolilor, ci indirect cu derivați ai acizilor, cum ar fi: cloruri acide sau anhidride.<br><img src="37.png" alt="" class="forimgx"><br>Asemănător se obține aspirina, prin reacția acidului salicilic (acid 2- hidroxibenzoic) cu anhidrida acetică sau clorura de acetil. Acidul salicilic este un compus organic cu două grupe funcționale: grupa carboxil și grupa hidroxil.<br><img src="38.png" alt="" class="forimgx"><br>Esteri se pot obține și prin reacția dintre un fenoxid alcalin și o clorură sau o anhidridă a unui acid carboxilic.<br><img src="39.png" alt="" class="forimgx"></li>
+        <li>Reacția de eterificare<br>Eteri simpli sau micști se pot obține prin reacția dintre fenoxizi și derivații halogenați.<br><img src="137.png" alt="" class="forimgx"></li>
+        <li>Reacția de oxidare<br>Fenolii se pot oxida cu oxigen din aer (autooxidare) sau cu agenți oxidanți, formând compuși cetonici (chinone).<br>Exemple de reacții de oxidare și de autooxidare (cu oxigen din aer):<br><img src="138.png" alt="" class="forimgx"><br>Exemplu de reacție de oxidare cu agenți oxidanți la hidrochinonă:<br><img src="139.png" alt="" class="forimgx"></li>
+        <li>Reacții de culoare<br>Fenolii reacționează cu soluție apoasă de clorură ferică, formând combinații complexe de diferite culori. În funcție de culoarea obținută putem identifica fenolul. De exemplu:<br>
+            <ul class="showul">
+                <li>roșu-violet (violet) pentru: fenol, α-naftol, rezorcină, acid salicilic, aldehida salicilică, o și p-hidroxibenzaldehida;</li>
+                <li>albastru (albastru-violet) pentru: crezoli, hidrochinonă, xilenoli;</li>
+                <li>verde pentru: β-naftol, pirocatechină;</li>
+                <li>roșu pentru: acid nitrosalicilic. </li>
+            </ul>
+        </li>
+    </ol>
+    <h3>Reacții caracteristice nucleului aromatic</h3>
+    <ol>
+        <li>Reacții de substituție<br>Fenolii dau mai ușor reacții de substituție decât arenele de la care provin din cauza influenței grupei hidroxil.<br>- Halogenarea fenolului<br>Halogenarea fenolului, care se poate face cu Cl<sub>2</sub> , Br<sub>2</sub> și I<sub>2</sub> , nu necesită catalizatori (față de halogenarea benzenului). Clorurarea sau bromurarea fenolului se fac la rece în diferiți solvenți și rezultă amestecuri de derivați di și trihalogenați. Grupa hidroxil (– OH) este un substituient de ordinul I, deci va orienta intrarea celui de-al doilea substituient în pozițiile orto și para.<br><img src="40.png" alt="" class="forimgmx"><br>În ultima etapă a halogenării (pentru obținerea pentahalogenofenolului), pentru substituirea ultimilor doi atomi de hidrogen, se folosesc catalizatorii: FeCl<sub>3</sub> , AlCl<sub>3</sub> , FeBr<sub>3 </sub>. Reacția de bromurare are loc asemănător cu clorurarea, cu precizarea că dacă bromurarea se efectuează cu apă de brom, în prezență de hidroxizi alcalini (NaOH), se obține direct 2,4,6-tribromofenolul, sub forma unui precipitat alb (reacție folosită la dozarea cantitativă a fenolului):<br><img src="41.png" alt="" class="forimgm"><br>- Nitrarea fenolului<br>Nitrarea fenolului se face cu acid azotic diluat (mult mai ușor decât nitrarea benzenului, care se face cu amestec sulfonitric). Cu exces de reactiv (acid azotic) sau cu acid concentrat se formează acidul picric.<br><img src="42.png" alt="" class="forimgmx"></li>
+    </ol>
+<script src="app.js"></script>
+</body>
+</html>

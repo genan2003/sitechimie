@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="StyleLectii.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <title>Compuși halogenați</title>
+</head>
+<body class="container-fluid" onload="renderTime()">
+  <nav>
+    <div class="logo"><img src="logo.png" alt=""></div>
+    <label for="btn" class="icon">
+        <span class="fas fa-bars"></span>
+    </label>
+    <input type="checkbox" id="btn">
+    <ul>
+       <li><a href="index.html" style="text-decoration:none">Acasa</a></li>
+       <li>
+           <label for="btn-1" class="show">Clasa a IX-a</label>
+           <a href="#" style="text-decoration:none">Clasa a IX-a</a>
+           <input type="checkbox" id="btn-1">
+           <ul>
+               <li><a href="Atomul.html" style="text-decoration:none">Atomul</a></li>
+               <li><a href="Proprietatile elementelor.html" style="text-decoration:none;padding: 0%;" class="btns">Proprietățile elementelor</a></li>
+               <li><a href="corelatii.html" style="text-decoration:none;padding: 0%;" class="btns">Corelații între structura învelișului de electroni, poziția în tabelul periodic și proprietațile elementelor</a></li>
+           </ul>
+        </li>
+        <li>
+            <label for="btn-2" class="show">Clasa a X-a</label>
+            <a href="#" style="text-decoration:none">Clasa a X-a</a>
+            <input type="checkbox" id="btn-2">
+            <ul>
+            </ul>
+        </li>
+        <li>
+            <label for="btn-3" class="show">Clasa a XI-a</label>
+            <a href="#" style="text-decoration:none">Clasa a XI-a</a>
+            <input type="checkbox" id="btn-3">
+            <ul>
+              <li><a href="Izomeria geometrica.html" style="text-decoration:none;padding: 0%;" class="btns">Izomeria<br>optică</a></li>
+              <li><a href="Compusi halogenati.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși halogenați</a></li>
+              <li><a href="Alcooli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Alcooli</a></li>
+              <li><a href="Fenoli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Fenoli</a></li>
+              <li><a href="Amine.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Amine</a></li>
+              <li><a href="Compusi carbonilici.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși<br>carbonilici</a></li>
+            </ul>
+        </li>
+        <li>
+          <label for="btn-5" class="show">Teste de antrenament</label>
+          <a href="#" style="text-decoration:none">Teste de antrenament</a>
+          <input type="checkbox" id="btn-5">
+          <ul>
+            <li><a href="teste anorganica.html" style="text-decoration:none;padding: 0%;" class="btns">Chimie anorganică</a></li>
+            <li><a href="teste organica.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Chimie organică</a></li>
+          </ul>
+      </li>
+        <li>
+          <label for="btn-4" class="show"><a href="manuale.html">Manuale și culegeri</a></label>
+          <a href="manuale.html" style="text-decoration:none">Manuale și culegeri</a>
+          <input type="checkbox" id="btn-4">
+      </li>
+        <li>
+          <label for="btn-4" class="show"><a href="contact.html">Contact</a></label>
+          <a href="contact.html" style="text-decoration:none">Contact</a>
+          <input type="checkbox" id="btn-4">
+
+      </li>
+    </ul>
+</nav>
+<div id="clockDisplay" class="containerclock"></div>
+    <h1>Compuși halogenați</h1>
+    <p>Definiție:	Compușii halogenați sunt compuși organici cu funcțiune simplă care conțin în moleculă unul sau mai mulți atomi de halogen.</p>
+    <p> Compușii halogenați se mai numesc și derivați halogenați și au formula generală R – X , unde X = F, Cl, Br, I, iar R este un radical de hidrocarbură. Deci compușii halogenați provin din hidrocarburi prin înlocuirea a unul sau mai mulți atomi de hidrogen cu atomi de halogen.</p>
+    <p> La stabilirea nomenclaturii, halogenii nu au prioritate în fața radicalilor sau altor grupări. Redăm mai jos ordinea de stabilire a priorității pentru principalele grupe funcționale.</p>
+    <img src="58.png" alt="">
+    <h2>Clasificare:</h2>
+    <ul class="showul">
+      <li>După natura atomului de halogen din moleculă pot fi:
+        <ol>
+          <li>Fluorurați: CF<sub>4</sub> = tetrafluorura de carbon , CH<sub>2</sub>F<sub>2</sub>  = difluorometan</li>
+          <li>Clorurați: CHCl<sub>3</sub>  = triclorometan (cloroform), CH<sub>3</sub> – CH<sub>2</sub> – Cl = cloroetan (clorură de etil, kelen)</li>
+          <li>Bromurați: C<sub>6</sub>H<sub>5</sub> – Br = bromobenzen (bromură de fenil)</li>
+          <li>Iodurați: CH<sub>3</sub>I = iodometan (iodură de metil) </li>
+        </ol>
+      </li>
+        <li>După numărul atomilor de halogen din moleculă:
+          <ol>
+            <li>Monohalogenați: CH<sub>3</sub>Cl = clorometan, CH<sub>3</sub> – CH<sub>2</sub> – CH<sub>2</sub> – Br = 1-bromopropan (bromură de propil)</li>
+            <li>Polihalogenați: <img src="12.png" alt="" class="forimg">= 1,3 - dibromobutan</li>
+          </ol>
+        </li>
+        <li>După natura radicalului de hidrocarbură de care se leagă atomul sau atomii de halogen din moleculă
+          <ol>
+            <li>Compuși halogenați alifatici saturați sau nesaturați:
+              <ul>
+                <li>Saturați: clorometan, clorura de etil, iodura de izopropil, etc.</li>
+                <li>o	Nesaturați: CH<sub>2</sub> = CH – CH<sub>2</sub> – Br bromura de alil</li>
+              </ul>
+            </li>
+            <li>Compuși halogenați aromatici: C<sub>6</sub>H<sub>5</sub>–Cl = clorobenzen (clorură de fenil) sau C<sub>6</sub>H<sub>5</sub> – CH<sub>2</sub> – Cl clorofenilmetan (clorură de benzil)</li>
+          </ol>
+        </li>
+        <li>După poziția pe catenă a atomilor de halogen:
+          <ul class="showul">
+            <li>vicinali – atomii de halogen sunt legați de atomi de carbon vecini<br><img src="13.png" alt="" class="forimgm"></li>
+            <li>geminali – atomii de halogen sunt legați de același atom de carbon<br><img src="14.png" alt="" class="forimgx"></li>
+            <li>izolați – atomii de halogen sunt legați de atomi de carbon ce nu sunt vecini<br><img src="15.png" alt="" class="forimgm"></li>
+          </ul>
+        </li>
+        <li>După reactivitatea halogenului:
+          <ol>
+            <li>cu reactivitate normală: bromura de etil (derivați ai alcanilor, cicloalcanilor sau arenelor cu halogenul în catena laterală);</li>
+            <li>cu reactivitate scăzută: clorobenzen sau clorura de vinil: CH2 = CH – Cl (au halogenul legat direct de un nucleu aromatic sau de atomul de carbon implicat într-o legătură dublă);</li>
+            <li>cu reactivitate mărită - când halogenul este în poziția alilică, benzilică sau la un atom de carbon terțiar, de ex.:<br><img src="16.png" alt="" class="forimgmx"></li>
+          </ol>
+        </li>
+    </ul>
+    <h2>Metode de obținere</h2>
+    <p>Compușii  halogenați se pot obține cel mai rapid prin halogenare directă (reacții de halogenare) prin reacții de substituție și reacții de adiție.</p>
+    <h4>Halogenarea alcanilor</h4>
+    <p>Halogenarea alcanilor se face prin reacții de substituție.</p>
+    <p>Condițiile de reacție : clorurarea sau bromurarea alcanilor se face la lumină difuză (fotochimic) sau prin încălzire (t = 300 – 5000<sup>0</sup> C). Nu se pot obține direct (prin halogenare directă) derivați fluorurați și iodurați, ci prin metode indirecte.</p>
+    <p>Clorurarea și bromurarea fotochimică a metanului conduce la obținerea unui amestec de compuși clorurați sau bromurați:</p>
+    <img src="59.png" alt="" class="forimgmx">
+    <p>În funcție de condițiile de reacție, se pot obține și derivați monohalogenați.</p>
+    <p>De exemplu:</p>
+    <ul class="showul">
+      <li>prin monoclorurarea fotochimică a etanului se obține cloroetan (kelen);</li>
+      <li>prin monoclorurarea fotochimică a propanului se obțin 1-cloropropan și 2-cloropropan (clorura de izopropil), care sunt izomeri de poziție.</li>
+      <li>prin monobromurarea butanului se obțin cei doi izomeri: 1-bromobutan și 2-bromobutan (în concentrație mai mare).</li>
+    </ul>
+    <p>Deoarece stabilitatea radicalilor crește în ordinea:</p>
+    <p>radical primar < radical secundar < radical terțiar</p>
+    <p>Cel mai ușor de substituit este atomul de hidrogen de la atomul de carbon terțiar, apoi de la atomul de carbon secundar și cel mai greu de la atomul de carbon primar.</p>
+    <p>Prin halogenarea unui alcan care conține atomi de carbon primari, secundari și terțiari, se va obține un amestec de izomeri, care va conține în cantitatea cea mai mare, derivații cu halogenul legat de atomul de carbon terțiar.</p>
+    <h4>Halogenarea alchenelor</h4>
+    <p>Halogenarea alchenelor se poate face prin reacții de adiție și prin reacții de substituție.</p>
+    <ol style="list-style-type: lower-alpha;">
+      <li>prin adiția halogenilor sau hidracizilor la alchene se obțin derivați halogenați
+        <ol style="list-style-type:upper-roman">
+          <li>Adiția halogenilor<br>
+            Halogenii care se pot adiționa la alchene sunt: Cl<sub>2</sub>, Br<sub>2</sub> și I<sub>2</sub> , iar reactivitatea lor în reacțiile de adiție crește cu caracterul electronegativ al acestora.<br>
+            Reacția de halogenare a alchenelor se face de obicei într-un solvent inert (CCl<sub>3</sub> , CH<sub>2</sub>Cl<sub>2</sub> , CS<sub>2</sub>). Dacă adiția iodului se face mai greu, cea a clorului și a bromului au loc instantaneu. De aceea reacția cu bromul se folosește pentru recunoașterea / identificarea alchenelor (se observă decolorarea soluției de Br<sub>2</sub>).
+            Prin adiția halogenilor la alchene se obțin derivați dihalogenați vicinali (saturați) cu aspect uleios. De aici denumirea de olefine dată alchenelor.<br>
+            <img src="60.png" alt="" class="forimgmx"><br>
+            <img src="61.png" alt="" class="forimgmx">
+          </li>
+          <li>Adiția hidracizilor<br>
+            Reactivitatea hidracizilor în reacția de adiție la alchene crește cu tăria acidului, deci în ordinea: HCl < HBr < HI.<br>
+          <img src="62.png" alt="" class="forimgmx"><br>
+          La adiția hidracizilor la alchenele nesimetrice se respectă regula lui Markovnikov : la adiția hidracizilor la alchene, hidrogenul se adiționează la atomul de carbon mai bogat în hidrogen de la legătura dublă:<br>
+          <img src="63.png" alt="" class="forimgmx">
+        </li>
+        </ol>
+      </li>
+      <li>obținerea derivaților halogenați din alchene prin reacția de substituție
+        <br>
+        Substituția halogenilor (clor sau brom) la alchene, are loc la temperatură ridicată (500 <sup>0</sup>C sau 300 <sup>0</sup>C cu catalizator de Al<sub>2</sub>O<sub>3</sub>), iar halogenul intră în poziția alilică (substituie un atom de H din poziția alilică).<bt>
+          <img src="64.png" alt="" class="forimgmx">
+      </li>
+    </ol>
+    <h4>Halogenarea alchinelor</h4>
+    <p>Halogenarea alchinelor se poate face prin reacții de adiție a halogenilor și hidracizilor.</p>
+    <ol style="list-style-type: upper-roman;">
+<li>Adiția halogenilor<br>
+  Reacția clorului cu acetilena în fază gazoasă este violentă (cu explozie) și exotermă:  C<sub>2</sub>H<sub>2</sub>  +  Cl<sub>2</sub>  →  2C  +  2HCl  +  Q<br>
+  Adiția halogenilor la alchine se face într-un solvent inert (CCl<sub>4</sub> ). În funcție de cantitatea de reactant sau condițiile de reacție se obțin produși dihalogenați sau tetrahalogenați:<br>
+  <img src="65.png" alt="" class="forimgmx"><br>
+  
+</li>
+<li>
+  Adiția hidracizilor<br>
+  Adiția hidracizilor , HX (X = Cl sau Br) are loc la temperaturi cuprinse între 170-200<sup>0</sup>C, în prezența clorurii de mercur, HgCl<sub>2</sub>  drept catalizator. Se respectă regula lui Markovnikov la adiția hidracizilor la alchine.<br>
+  <img src="66.png" alt="" class="forimgmx">
+</li>
+    </ol>
+    <h4>Halogenarea alcadienelor</h4>
+    <p>Halogenarea alcadienelor se poate face prin reacții de adiție a halogenilor și hidracizilor.</p>
+    <p>Prin halogenarea (Cl<sub>2</sub>, Br<sub>2</sub>) alcadienelor cu legături conjugate, produsul majoritar este cel obținut prin „adiția 1-4”. Minoritar se obține și produsul rezultat prin „adiția 1-2” sau 3-4. Cifrele 1, 2, 3 și 4 sunt „împrumutate” de la butadienă, dar pot fi și diferite.</p>
+    <img src="67.png" alt="" class="forimgmx">
+    <p>Cu exces de brom se obține produsul tetrabromurat saturat:</p>
+    <img src="68.png" alt="" class="forimgmx">
+    <h4>Halogenarea arenelor</h4>
+    <p>Halogenarea arenelor se poate face atât prin reacții de adiție cât și prin reacții de substituție, în funcție de condiții.</p>
+    <ol class="showul">
+      <li>
+        Halogenarea arenelor prin reacții de adiție<br>
+        Halogenarea (Cl<sub>2</sub> , Br<sub>2</sub>) arenelor se face la lumină (fotochimic):<br>
+        <img src="69.png" alt="" class="forimgmx"><br>
+        Halogenarea fotochimică a naftalinei are loc numai la unul din nuclee. Clorul ocupă întâi pozițiile α (mai reactive), iar apoi și pozițiile β.<br>
+        <img src="70.png" alt="" class="forimgmx">
+      </li>
+      <li>
+        Halogenarea arenelor prin reacții de substituție<br>
+        Halogenarea benzenului prin reacții de substituție se face în prezența unui catalizator:<br>
+        <ul class="showul">
+          <li>cu clor - catalizatori FeCl<sub>3</sub> sau AlCl<sub>3</sub>:<img src="71.png" alt="" class="forimgms"></li>
+          <li>cu brom - catalizator FeBr<sub>3</sub>:<img src="72.png" alt="" class="forimgms"></li>
+          <li>-	cu iod - catalizator HNO<sub>3</sub>:<img src="73.png" alt="" class="forimgms"></li>
+        </ul>
+        Clorurarea naftalinei conduce la obținerea unui derivat tetrahalogenat:<br>
+        <img src="74.png" alt="" class="forimgmx"><br>
+        <img src="75.png" alt="" class="forimgmx"><br>
+        Substituenții de ordinul I orientează intrarea celui de-al doilea substituent în pozițiile orto și para față de primul substituent, (cu activarea nucleului).<br>
+        <img src="76.png" alt="" class="forimgmx"><br>
+        <img src="77.png" alt="" class="forimgmx"><br>
+        <img src="78.png" alt="" class="forimgmx"><br>
+        Substituienții de ordinul II orientează intrarea celui de-al doilea substituent în poziția meta față de primul substituent, (cu dezactivarea nucleului).<br>
+        <img src="79.png" alt="" class="forimgmx"><br>
+        <img src="80.png" alt="" class="forimgmx"> 
+      </li>
+      <li>Halogenarea la catena laterală<br>
+        Clorurarea toluenului la lumină, are loc la catena laterală (nu la nucleu) și se formează un amestec de derivați clorurați:<br>
+        <img src="81.png" alt="" class="forimgmx"><br>
+        Halogenarea (Cl<sub>2</sub> , Br<sub>2</sub>) arenelor în poziția benzilică (la catena laterală), are loc asemănător cu halogenarea alchenelor în poziția alilică:<br>
+        <img src="82.png" alt="" class="forimgmx">
+      </li>
+    </ol>
+    <h4>Obținerea compușilor halogenați din alcooli și compuși carbonilici.</h4>
+    <ol style="list-style-type: lower-alpha;">
+      <li>Reacția alcoolilor cu hidracizii (HCl, HBr, HI)<br>
+        Se mai numește și reacția Lucas. Alcoolii reacționează cu o soluție concentrată de hidracid și ZnCl<sub>2</sub> (reactiv Lucas). Cel mai ușor reacționează alcoolii terțiari.<br>
+      <img src="83.png" alt="" class="forimgmx"></li>
+      <li>Reacția alcoolilor primari și secundari cu PBr<sub>3</sub> (tribromură de fosfor) sau SOCl<sub>2</sub> (clorură de tionil).<br><img src="84.png" alt="" class="forimgmx"></li>
+      <li>Reacția compușilor carbonilici cu PCl5 (pentaclorură de fosfor).<br><img src="85.png" alt="" class="forimgmx"></li>
+    </ol>
+    <h1>Proprietăți fizice</h1>
+    <p>Compușii halogenați, la temperatură obișnuită sunt în toate stările de agregare:</p>
+    <ul class="showul">
+      <li>gaze : clorometanul bromometanul, cloroetanul , clorura de vinil, etc.;</li>
+      <li>lichide : clorobenzenul, bromobenzenul, cloroformul, tetraclorura de carbon, etc;</li>
+      <li>solide : teflonul (politetrafluoroetena), DDT (dicloro-difenil-tricloretan), etc.</li>
+    </ul>
+    <p>Clorurile și bromurile inferioare au miros dulceag și proprietăți anestezice.</p>
+    <p>Derivații halogenați au molecule polare sau nepolare. Cei inferiori cu moleculă polară sunt solubili în apă, iar compușii monofluorurați formează legăruri de H cu apa. Cei superiori (peste 3 atomi de carbon în moleculă) îi compușii polihalogenați sunt insolubili în apă, dar solubili în eteri, alcooli, esteri. </p>
+    <p>Punctele de fierbere și densitatea cresc de la derivații fluorurați la cei iodurați, iar densitatea compușilor bromurați, iodurați și polihalogenați e mai mare decât a apei (ρ = 1 g/cm<sup>3</sup> ).</p>
+    <h1>Proprietăți chimice</h1>
+    <p>Proprietățile chimice ale derivaților halogenați sunt date de natura halogenului (halogenilor) și de natura radicalului de care este/sunt legat/legați.</p>
+    <p>Principalele proprietăți ale compușilor halogenați sunt reacțiile de substituție și reacțiile de eliminare.</p>
+    <ol>
+      <li>
+        Reacții de substituție<br>
+        Reactivitatea derivaților halogenați, depinde de natura atomului (atomilor) de halogen din moleculă și de natura radicalului de care este legat. Ușurința cu care compușii halogenați vor da reacții de substituție crește cu:<br>
+        <ul class="showul">
+          <li>tipul de radical de care se leagă halogenul (cei terțiari sunt mai reactivi);</li>
+          <li>natura halogenului:<img src="86.png" class="forimgm"></li>
+          <li>reactivitatea derivatului halogenat:<img src="87.png" class="forimgmx"></li>
+        </ul>
+        Se consideră că derivații halogenați cu reactivitate scăzută (cum ar fi cei aromatici sau vinilici) dau reacții de substituție în condiții foarte energice și cu randamente mici.<br>
+        <ol style="list-style-type: lower-alpha;">
+          <li>Reacția de hidroliză
+            <br>
+            Condițiile de lucru depind de reactivitatea derivatului halogenat. În continuare vom considera că avem un derivat halogenat cu reactivitate normală, iar pentru acesta, condițiile sunt: la cald, în soluții apoase de baze tari.<br>
+            <ul class="showul">
+              <li>compușii monohalogenați formează prin hidroliză alcooli:<br><img src="88.png" alt="" class="forimgmx"></li>
+              <li>compușii dihalogenați geminali formează prin hidroliză compuși carbonilici<br><img src="89.png" alt="" class="forimgx"><br><img src="90.png" alt="" class="forimgx"></li>
+              <li>compușii trihalogenați geminali formează prin hidroliză compuși carboxilici:<br><img src="91.png" alt="" class="forimgx"></li>
+            </ul>
+          </li>
+          <li>Reacția cu amoniacul și aminele<br>
+          <img src="92.png" alt="" class="forimgx">
+          </li>
+        </ol>
+      </li>
+      <li>Reacția de alchilare a arenelor(reacția Friedel-Crafts)<br>
+        Definiție:	Substituția unui atom de hidrogen de la un nucleu aromatic cu un radical alchil se numește reacție de alchilare Friedel-Crafts.<br>
+        Prin reacțiile de alchilare a arenelor se obțin arene cu catenă laterală.<br>
+        Alchilarea arenelor se poate face cu: derivați halogenați, alchene sau alcooli.<br>
+        <ol style="list-style-type: lower-alpha;">
+          <li>alchilarea arenelor cu derivați halogenați, se face în prezență de AlCl<sub>3</sub> anhidră:<br>
+          <img src="93.png" alt="" class="forimgx"></li>
+          <li>alchilarea arenelor cu alchene, se face în prezență de AlCl<sub>3</sub> umedă:<br>
+          <img src="94.png" alt="" class="forimgx"><br>
+          Ecuațiile reacțiilor chimice sunt:<br>
+        <img src="95.png" alt="" class="forimgx"></li>
+        <li>alchilarea arenelor cu alcooli se face în prezență de H<sub>2</sub>SO<sub>4</sub>:<br>
+        <img src="96.png" alt="" class="forimgx"></li>
+        </ol>
+      </li>
+      <li>Reacția de eliminare(de dehidrohalogenare)<br>
+        Condiții: soluții alcoolice (alcooli inferiori) de baze tari (KOH, NaOH, C<sub>2</sub>H<sub>5</sub>ONa). Se consideră că derivații halogenați cu reactivitate scăzută nu dau această reacție. Reactivitatea derivaților halogenați în această reacție crește în ordinea:
+        <ol style="list-style-type: lower-alpha;">
+          <li><img src="97.png" alt="" class="forimgmx"></li>
+          <li><img src="98.png" alt="" class="forimgmx"></li>
+        </ol><br>
+        În această reacție de eliminare, produsul majoritar se obține  conform regulii lui Zaițev (atunci când e cazul):<br>
+        <b>Regula lui Zaițev:</b>	Hidrogenul pleacă de la un atom de carbon vecin atomului de carbon de care se leagă halogenul, mai sărac în hidrogen.
+        <br>
+        Prin această metodă se pot obține alchene, alchine sau alcadiene.<br>
+        <img src="99.png" alt="" class="forimgx"><br>
+        Prin dehidrohalogenarea compușilor halogenați care conțin doi atomi de halogen legați de același atom de carbon (derivați dihalogenați geminali) se pot obține alchine:<br>
+        <img src="100.png" alt="" class="forimgmx"><br>
+        Există derivați halogenați care la dehidrohalogenare nu respectă regula lui Zaițev, dacă formează compuși cu legături duble conjugate:<br>
+        <img src="101.png" alt="" class="forimgx">
+      </li>
+      <li>Reacția cu magneziu
+        <br>
+        Toți derivații halogenați pot reacționa cu magneziu și formează  compuși organo-magnezieni (compuși Grignard).<br>
+        Condiții: eter anhidru (solvent).<br>
+        <img src="102.png" alt="" class="forimgmx"><br>
+        Prin hidroliză, compușii organo-magnezieni formează hidrocarburi.<br>
+        <img src="103.png" alt="" class="forimgx">
+      </li>
+      <li>Reacția cu cianurile metalelor alcaline (sinteze de nitrili)<br>
+        Reacția este importantă deoarece crește numărul atomilor de carbon din catenă.<br>
+        <img src="104.png" alt="" class="forimgx">
+      </li>
+      <li>Reacția cu acetiluri alcaline<br>
+        Reacția este importantă deoarece crește numărul atomilor de carbon din catenă.<br>
+        <img src="105.png" alt="" class="forimgx">
+      </li>
+    </ol>
+    <h4>Utilizări și importanță</h4>
+    <p>Derivații halogenați se utilizează la obținerea, maselor plastice, insecticidelor, ierbicidelor, cauciucurilor sintetice, etc. Sunt intermediari în multe sinteze organice.</p>
+    <ul class="showul">
+      <li>Clorura de metil – agent frigorific, solvent, anestezic local. </li>
+      <li>Triclorometan – solvent, anestezic.</li>
+      <li>Tetraclorura de carbon – stingerea incendiilor, solvent.</li>
+      <li>Clorura de etil – agent frigorific, anestezic (kelen).</li>
+      <li>Clorura de benzil – substanță lacrimogenă și intermediar în sinteze organice.</li>
+      <li>Freonii – cloro-fluoro derivați ai alcanilor (cu 1-2 atomi de carbon), folosiți ca agenți de răcire, distrug stratul de ozon (O<sub>3</sub>) al planetei și sunt foarte stabili.</li>
+    </ul>
+    <p>Fluorul este un element foarte periculos pentru oganismul uman. În zilele noastre, industria compușilor cu fluor ne afectează pretutindeni. El este prezent în medicamente (anestetice, hipnotice, pilule dietetice, unele medicamente antipsihotice cum ar fi Prozac și Cipro, analgezice, corticoizi, etc.), în materialele plastice, în insecticide, pesticide, substanțe pentru deratizare, erbicide și fungicide, tutun, produsele de aluminiu, oțel, teflon, cărămidă, ceramică, ș.a.</p>
+    <p>Alte exemple de substanțe periculoase sunt: DDT-ul și dioxinele (denumirea pentru un grup de câteva sute de substanțe cu structură și proprietăți asemănătoare ; doza mortală 10<sup>-6</sup>g / kg corp ). Dioxinele provin din arderea reziduurilor care conțin compuși organoclorurați, ca de exemplu masele plastice și lemnul tratat, cât și din procesul de fabricație al hârtiei. Sunt contaminate în principal produsele lactate, cele din carne și unele uleiuri dietetice din pește. Acumularea se realizează în țesuturile grase ale organismului. Dioxinele sunt cancerigene, determină perturbări ale sistemului endocrin și alterează sistemul imun. Ele întârzie dezvoltarea cerebrală și reduc coeficientul de inteligență la copii.</p>
+    <img src="106.png" alt="" class="forimgx">
+    <script src="app.js"></script>
+  </body>
+</html>

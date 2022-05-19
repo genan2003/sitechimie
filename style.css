@@ -1,0 +1,214 @@
+body,
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("background.jpg");
+
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+background-size: cover;
+z-index: 1;
+position: fixed;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.4); /* Black w/opacity/see-through */
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+
+}
+nav {
+  background: rgb(255, 255, 255);
+}
+nav:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+nav .logo {
+  float: left;
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 60px;
+  
+}
+nav ul {
+  float: right;
+  list-style: none;
+  margin-right: 40px;
+  position: relative;
+  z-index: 3;
+}
+nav ul li {
+  float: left;
+  display: inline-block;
+  background: white;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li:hover{
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #D4D2CB,
+  0 0 5px #D4D2CB                 ;
+}
+nav ul ul li a:hover{
+  color: #D4D2CB;
+  box-shadow: none;
+}
+nav ul ul {
+  position: absolute;
+  top: 90px;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0, 0, 0, 0, 0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+
+}
+nav ul ul ul li {
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+.show,.icon ,input{
+  display: none;
+}
+.btns{
+  line-height: normal;
+  
+}
+@media screen and (max-width: 500px) {
+  nav ul{
+    margin-right: 0px;
+    float: left;
+    z-index: 3;
+  }
+  nav .logo{
+    text-align: left;
+    float: left;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 70px;
+    width: 100%;
+  }
+  nav img{
+    width: 50%;
+  }
+  nav ul li, nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul ul{
+    top: 70px;
+    position: static;
+    border-top: none;
+    float: none;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  .show{
+    display: block;
+    color: black;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: black;
+  }
+  .icon{
+    display: block;
+    color: black;
+    position: absolute;
+    right: 40px;
+    line-height: 70px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show + a,ul{
+    display: none;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  .btns{
+    line-height: 1cm;
+  }
+}
+.containerclock{
+  text-align: right;
+}

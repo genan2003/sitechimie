@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="StyleLectii.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <title>Izomeria optică</title>
+</head>
+<body class="container-fluid">
+  <nav>
+    <div class="logo"><img src="logo.png" alt=""></div>
+    <label for="btn" class="icon">
+        <span class="fas fa-bars"></span>
+    </label>
+    <input type="checkbox" id="btn">
+    <ul>
+       <li><a href="index.html" style="text-decoration:none">Acasa</a></li>
+       <li>
+           <label for="btn-1" class="show">Clasa a IX-a</label>
+           <a href="#" style="text-decoration:none">Clasa a IX-a</a>
+           <input type="checkbox" id="btn-1">
+           <ul>
+               <li><a href="Atomul.html" style="text-decoration:none">Atomul</a></li>
+               <li><a href="Proprietatile elementelor.html" style="text-decoration:none;padding: 0%;" class="btns">Proprietățile elementelor</a></li>
+               <li><a href="corelatii.html" style="text-decoration:none;padding: 0%;" class="btns">Corelații între structura învelișului de electroni, poziția în tabelul periodic și proprietațile elementelor</a></li>
+           </ul>
+        </li>
+        <li>
+            <label for="btn-2" class="show">Clasa a X-a</label>
+            <a href="#" style="text-decoration:none">Clasa a X-a</a>
+            <input type="checkbox" id="btn-2">
+            <ul>
+            </ul>
+        </li>
+        <li>
+            <label for="btn-3" class="show">Clasa a XI-a</label>
+            <a href="#" style="text-decoration:none">Clasa a XI-a</a>
+            <input type="checkbox" id="btn-3">
+            <ul>
+              <li><a href="Izomeria geometrica.html" style="text-decoration:none;padding: 0%;" class="btns">Izomeria<br>optică</a></li>
+              <li><a href="Compusi halogenati.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși halogenați</a></li>
+              <li><a href="Alcooli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Alcooli</a></li>
+              <li><a href="Fenoli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Fenoli</a></li>
+              <li><a href="Amine.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Amine</a></li>
+              <li><a href="Compusi carbonilici.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși<br>carbonilici</a></li>
+            </ul>
+        </li>
+        <li>
+          <label for="btn-5" class="show">Teste de antrenament</label>
+          <a href="#" style="text-decoration:none">Teste de antrenament</a>
+          <input type="checkbox" id="btn-5">
+          <ul>
+            <li><a href="teste anorganica.html" style="text-decoration:none;padding: 0%;" class="btns">Chimie anorganică</a></li>
+            <li><a href="teste organica.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Chimie organică</a></li>
+          </ul>
+      </li>
+        <li>
+          <label for="btn-4" class="show"><a href="manuale.html">Manuale și culegeri</a></label>
+          <a href="manuale.html" style="text-decoration:none">Manuale și culegeri</a>
+          <input type="checkbox" id="btn-4">
+      </li>
+        <li>
+          <label for="btn-4" class="show"><a href="contact.html">Contact</a></label>
+          <a href="contact.html" style="text-decoration:none">Contact</a>
+          <input type="checkbox" id="btn-4">
+
+      </li>
+    </ul>
+</nav>
+    <body class="container-fluid" onload="renderTime()">
+      <div id="clockDisplay" class="containerclock"></div>
+        <h1 class="serif w3-center ">Izomeria optică</h1>
+        <p class="serif">Obiectele care nu se pot suprapune cu imaginea lor în oglindă se numesc obiecte chirale. De exemplu: doi pantofi(pereche), două manuși (pereche), doi papuci, etc. Indiferent de mișcările pe care le-am face pentru a încerca suprapunerea celor două obiecte, acestea nu se suprapun una peste cealaltă. Obiectele chirale se prezintă ca obiect și imaginea în oglindă a acestuia și nu au elemente de simetrie (punct sau plan). Obiectele care prezintă elemente de simetrie, de exemplu un plan de simetrie, sunt achirale. O masă sau un scaun prin mijlocul cărora putem trasa un plan de simetrie, care separă cele două jumătăți identice sunt achirale. Și în natură întâlnim substanțe sau părți de corpuri chirale. De exemplu cele două palme.</p>
+        <p class="serif">Pentru ca o moleculă să fie chirală, trebuie să aibă cel puțin un centru de chiralitate, adică de exemplu un atom de carbon care să aibă patru substituienți diferiți.</p>
+        <p class="serif">Atomul de carbon care are patru subtituienți diferiți se mai numește și carbon asimetric sau centru de chiralitate și se notează cu C*.</p>
+        <p class="serif">Izomerii optici pot fi reprezentaţi prin structuri spaţiale tetraedrice sau prin structuri plane „Fischer" (prolecţii Fischer)</p>
+        <img src="6.png" alt="" class="">
+        <p>Cei doi izomeri care se găsesc în relaţia de obiect şi imagine în oglindă se numesc enantiomeri. De exemplu (1) şi (2). </p>
+        <p>Definiţie: Enantiomerii sunt stereoizomeri cu un atom de carbon asimetric. <br>Exemple de molecule achirale (care nu prezintă activitate optică): </p>
+        <img src="7.png" alt="" class="forimgmxx">
+        <p>Exemple de molecule chirale (care prezintă activitate optică): </p>
+        <img src="8.png" alt="" class="forimgmxx">
+        <p>Proprietatea unor substanţe de a roti planul luminii polarizate când sunt străbătute de aceasta, se numeşte activitate optică. Enantiomerii sunt substanţe optic active deoarece rotesc lumina plan polarizată în sensuri diferite cu acelaşi număr de grade. De aceea ei se mai numesc şi izomeri optici sau antipozi optici. Enantiomerii au proprietăti fizice şi chimice identice. Singurele diferenţe dintre doi enantiomeri sunt modul cum rotesc planul luminii polarizate şi activitatea biologică diferită. Dacă soluţia unui enantiomer roteşte planul luminii polarizate spre dreapta cu un anumit număr de grade, vom spune că enantiomerul este dextrogir şi-l vom nota cu (+), iar enantiomerul său va roti planul luminii polarizate cu acelaşi număr de grade spre stânga şi se va numi /evogirfiind simbolizat cu (—). Amestecul echimolecular a doi enantiomeri se numeşte amestec racemic, este simbolizat (±) şi este optic inactiv, deoarece numărul de grade cu care roteşte enantiomerul dextrogir planul luminii polarizate spre dreapta este compensat cu acelaşi număr de grade, de rotaţia spre stânga a enantiomerului levogir. Amestecul racemic nu are activitate optică din cauza compensării intermoleculare. Pentru „n" centre de chiralitate (atomi de carbon asimetrici), există 2<sup>n</sup> stereoizomeri sau 2<sup>n</sup>/2 perechi de enantiomeri. Pentru 2 atomi de carbon asimetrici putem scrie 4 stereoizomeri. lată formulele de proiecţie pentru 3-cloro-2-butanol : </p>
+        <img src="9.png" alt="" class="forimgmxx">
+        <p>Stereoizomerii 1 şi 2 sau 3 şi 4 sunt enantiomeri, iar stereoizomerii 1 cu 3 şi 4 sau 2 cu 3 şi 4 sunt diastereoizomeri. Diastereoizomerii sunt stereoizomeri care nu se prezintă ca obiect şi imagine în oglindă. În cazul în care atomii de carbon asimetrici au substituenţi identici, numărul de izomeri optici se reduce dacă în moleculă apar elemente de simetrie. De exemplu: </p>
+        <img src="10.png" alt="" class="forimgmxx">
+        <h1>Explicaţie pentru obţinerea luminii polarizate</h1>
+        <p>0 sursă de lumină, emite oscilaţii in toate direcţiile. La trecerea ei printr-un dispozitiv de polarizare, rămân doar oscilaţiile care au loc intr-un singur plan, obţinându-se o radiaţie electromagnetică plan-polarizată. La trecerea unui fascicol de lumină plan-polarizată printr-o soluţie a unui singur enantiomer, are loc o deviere a planului de polarizare cu un anumit unghi a, spre dreapta, in sensul acelor ceasornicului sau spre stănga, invers acelor ceasornicului. Pentru cei doi enantiomeri valoarea unghiului este acelaşi dar sensul este opus: enantiomerul care deviază planul luminii polarizate spre dreapta (cu un unghi +a) este denumit dextrogir, iar cel care deviază planul luminii polarizate spre stănga (cu un unghi -a) este levogir. Această proprietate a enantiomerilor, denumită activitate optică se determină cu ajutorul polarimetrului.</p>
+        <img src="11.png" alt="" class="forimgmxx">
+        <p>Figura 1. Măsurarea activităţii optice a enatiomerilor <br>a) secţiune printr-un fascicol de lumină naturală (vectorii de cămp electric oscilează in toate direcţiile); <br>b) lumină polarizată in plan (vectorul de cămp electric oscilează numai intr-un singur plan); <br>c) şi d) rotirea planului de polarizare de către soluţia de enantiomer spre dreapta (enantiomerul dextrogir)si spre stânga (enantiomerul levogir). </p>
+        <p>Un amestec in cantităţi egale format din cei doi enantiomeri nu roteşte planul de polarizare şi este optic inactiv prin compensare intermoleculară. Un astfel de amestec (nu este o substanţă pură) se numeşte amestec racemic si el se obţine in mod obişnuit la sintezele chimice de compuşi chirali.</p>
+      <script src="app.js"></script>
+      </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="StyleLectii.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+          crossorigin="anonymous"
+        />
+        
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script
+          src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+          crossorigin="anonymous"
+        ></script>
+        <title>Proprietățile elementelor</title>
+    </head>
+<body class="container-fluid" onload="renderTime()">
+    <nav>
+        <div class="logo"><img src="logo.png" alt=""></div>
+        <label for="btn" class="icon">
+            <span class="fas fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+           <li><a href="index.html" style="text-decoration:none">Acasa</a></li>
+           <li>
+               <label for="btn-1" class="show">Clasa a IX-a</label>
+               <a href="#" style="text-decoration:none">Clasa a IX-a</a>
+               <input type="checkbox" id="btn-1">
+               <ul>
+                   <li><a href="Atomul.html" style="text-decoration:none">Atomul</a></li>
+                   <li><a href="Proprietatile elementelor.html" style="text-decoration:none;padding: 0%;" class="btns">Proprietățile elementelor</a></li>
+                   <li><a href="corelatii.html" style="text-decoration:none;padding: 0%;" class="btns">Corelații între structura învelișului de electroni, poziția în tabelul periodic și proprietațile elementelor</a></li>
+               </ul>
+            </li>
+            <li>
+                <label for="btn-2" class="show">Clasa a X-a</label>
+                <a href="#" style="text-decoration:none">Clasa a X-a</a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-3" class="show">Clasa a XI-a</label>
+                <a href="#" style="text-decoration:none">Clasa a XI-a</a>
+                <input type="checkbox" id="btn-3">
+                <ul>
+                  <li><a href="Izomeria geometrica.html" style="text-decoration:none;padding: 0%;" class="btns">Izomeria<br>optică</a></li>
+                  <li><a href="Compusi halogenati.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși halogenați</a></li>
+                  <li><a href="Alcooli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Alcooli</a></li>
+                  <li><a href="Fenoli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Fenoli</a></li>
+                  <li><a href="Amine.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Amine</a></li>
+                  <li><a href="Compusi carbonilici.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși<br>carbonilici</a></li>
+                </ul>
+            </li>
+            <li>
+              <label for="btn-5" class="show">Teste de antrenament</label>
+              <a href="#" style="text-decoration:none">Teste de antrenament</a>
+              <input type="checkbox" id="btn-5">
+              <ul>
+                <li><a href="teste anorganica.html" style="text-decoration:none;padding: 0%;" class="btns">Chimie anorganică</a></li>
+                <li><a href="teste organica.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Chimie organică</a></li>
+              </ul>
+          </li>
+            <li>
+              <label for="btn-4" class="show"><a href="manuale.html">Manuale și culegeri</a></label>
+              <a href="manuale.html" style="text-decoration:none">Manuale și culegeri</a>
+              <input type="checkbox" id="btn-4">
+          </li>
+            <li>
+              <label for="btn-4" class="show"><a href="contact.html">Contact</a></label>
+              <a href="contact.html" style="text-decoration:none">Contact</a>
+              <input type="checkbox" id="btn-4">
+  
+          </li>
+        </ul>
+    </nav>
+    <div id="clockDisplay" class="containerclock"></div>
+<h1>Proprietățile elementelor</h1>
+<p>Se clasifică în : proprietăți neperiodice(numărul atomic Z , numărul de masă A) și proprietăți periodice.</p>
+<p>Proprietațile elementelor se repetă după un anumit număr Z.</p>
+<p>Z crește cu o unitate pentru fiecare element ( de la 1 la 118)</p>
+<p>Numărul atomic este o proprietate neperiodică a elementelor care crește de la Z=1(primul element din sistemul periodic) până la ultimul.</p>
+<p>Masa atomică a elementelor este o proprietate neperiodică care crește de la primul până la ultimul element din sistemul periodic.</p>
+<table class="table-striped w3-row tablefix center">
+    <tr>
+        <th></th>
+        <th>Proprietăți fizice</th>
+        <th>Proprietăți chimice</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Neperiodice</td>
+        <td>Numărul atomic<br>1 ≤ Z ≤ 118 </td>
+        <td rowspan="2">Nu se cunosc</td>
+    </tr>
+    <tr>
+        <td>Masa atomică<br>1,008 ≤ A ≤ 262</td>
+    </tr>
+    <tr>
+        <td rowspan="4">Periodice</td>
+        <td>Raza atomică</td>
+        <td rowspan="2">Caracterul metalic</td>
+    </tr>
+    <tr>
+        <td>Raza ionică</td>
+    </tr>
+    <tr>
+        <td>Energia de ionizare</td>
+        <td>Caracterul nemetalic</td>
+    </tr>
+    <tr>
+        <td>Electonegativitatea</td>
+        <td>Valența – N.O.</td>
+    </tr>
+</table>
+<h2>Corelații între structura învelișului de electroni, poziția în tabelul periodic și proprietațile elementelor</h2>
+<p>Perioadele sunt șirurile orizontale cuprinse între doua gaze rare.</p>
+<p>Elementele unei perioade au același numar de straturi.</p>
+<p>Ultimul strat completat ne indică perioada din care face parte elementul.</p>
+<p>Grupele sunt șirurile verticale din sistemul periodic formate din elemente care au aceeași configurație electronică pe ultimul strat.</p>
+<p>Numărul electronilor de pe ultimul strat ne indică grupa din care face parte elementul.</p>
+<p>Ultimul electron din configurația electronică se numește electron distinctiv (este electronul pe care îl are in plus un element din sistemul periodic față de precedentul său).</p>
+<p>La elementele din grupele principale ,electronul distinctiv se află pe substraturile s sau p.</p>
+<p>Ultimul strat completat ne indică perioada din care face parte elementul.</p>
+<p>Perioadele se notează cu cifre arabe.</p>
+<p>Cifra unităților din numărul grupei principale indică grupa principală și numărul de electroni de pe ultimul strat.</p>
+<p>Numărul grupei ne indică valența maximă pe care o poate avea elementul (cu excepția oxigenului și fluorului din grupele principale).
+<br>Exemplu:<br>Z=20 → 1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>4s<sup>2</sup>=> Perioada 4 , Grupa II A</p>
+<p>Când electronul distinctiv se se află pe un substrat de tip d sau f , elementul face parte dintr-o grupă secundară.</p>
+<p>Exemplu:<br>Z=25 →1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>4s<sup>2</sup>3d<sup>5</sup> => Perioada 4 , Grupa VII B</p>
+<p>Dacă electronul distinctiv este  pe substratul s , atunci elementul face parte din blocul de elemente s.</p>
+<p>Dacă electronul distinctiv este  pe substratul p , atunci elementul face parte din blocul de elemente p.</p>
+<p>Dacă electronul distinctiv este  pe substratul d sau f, atunci elementul face parte din blocul de elemente d.</p>
+<h2>Raza atomică</h2>
+<p>Raza atomică este jumătate din distanța dintre nucleele a doi atomi identici, vecini.</p>
+<p>Raza atomică crește in grupă de sus in jos(cu creșterea numărului de straturi) și scade în perioadă de la stânga la dreapta.</p>
+<p>Variația razei în grupă:</p>
+<img src="52.png" alt="">
+<p>Variația razei în perioadă:</p>
+<img src="53.png" alt="">
+<p>Metalele alcaline au cea mai mare rază din perioada respectivă.</p>
+<h2>Raza ionică</h2>
+<p>Atomii gazelor nobile au o tendință limitată de a se combina cu alți atomi. Stabilitatea lor este datorată configurațiilor electronice de pe ultimul strat, numite configurații stabile de gaz nobil. Acestea sunt de dublet, pe stratul 1 (1s<sup>2</sup>), configurație întâlnită la atomul de heliu și octet (ns<sup>2</sup>np<sup>6</sup>) pe straturile 2, 3, 4, 5, 6, configurație întâlnită la atomii celorlalte gaze nobile.</p>
+<p>Atomii celorlalte elemente chimice tind să dobândească aceste configurații stabile pe stratul electronic exterior.</p>
+<p>În acest scop, atomii metalelor cedează electroni și formează ioni pozitivi. De exemplu:</p>
+<img src="54.png" alt="" class="forimgm">
+<p>Se observă că atomul de sodiu (Na) cedează un electron din orbitalul 3s și formează ionul pozitiv de sodiu (Na<sup>+</sup>), care are configurație de octet pe ultimul strat.</p>
+<p>Ionii pozitivi se mai numesc și cationi. Iar ionii negativi se mai numesc și anioni.</p>
+<p>Atomii nemetalelor primesc electroni, pentru atingerea configurației stabile pe ultimul strat și formează ioni negativi (anioni). De exemplu:</p>
+<img src="55.png" alt="" class="forimgm">
+<p>Variația razei ionice în grupă:</p>
+<img src="56.png" alt="">
+<p>Raza ionică crește în grupă de sus în jos, cu creșterea numărului de straturi.</p>
+<p>Variația razei ionice în perioadă:</p>
+<img src="57.png" alt="">
+<p>Raza ionică crește în perioadă de la dreapta la stânga, odată cu scăderea numărului de protoni din nucleu.</p>
+<p>Toți atomii și ionii care au același număr de electroni sunt izoelectronici.</p>
+<p>De exemplu, următorii ioni sunt izoelectronici: Na<sup>+</sup>, Mg<sup>2+</sup>, Al<sup>3+</sup>, O<sup>2+</sup>, F<sup>-</sup>, deoarece toți au configurație stabilă de 10 electroni. Izolectronic cu acești ioni, este și atomul de neon (Ne), care are Z = 10</p>
+<script src="app.js"></script>
+</body>
+</html>

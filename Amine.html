@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="StyleLectii.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <title>Amine</title>
+</head>
+<body class="container-fluid" onload="renderTime()">
+  <nav>
+    <div class="logo"><img src="logo.png" alt=""></div>
+    <label for="btn" class="icon">
+        <span class="fas fa-bars"></span>
+    </label>
+    <input type="checkbox" id="btn">
+    <ul>
+       <li><a href="index.html" style="text-decoration:none">Acasa</a></li>
+       <li>
+           <label for="btn-1" class="show">Clasa a IX-a</label>
+           <a href="#" style="text-decoration:none">Clasa a IX-a</a>
+           <input type="checkbox" id="btn-1">
+           <ul>
+               <li><a href="Atomul.html" style="text-decoration:none">Atomul</a></li>
+               <li><a href="Proprietatile elementelor.html" style="text-decoration:none;padding: 0%;" class="btns">Proprietățile elementelor</a></li>
+               <li><a href="corelatii.html" style="text-decoration:none;padding: 0%;" class="btns">Corelații între structura învelișului de electroni, poziția în tabelul periodic și proprietațile elementelor</a></li>
+           </ul>
+        </li>
+        <li>
+            <label for="btn-2" class="show">Clasa a X-a</label>
+            <a href="#" style="text-decoration:none">Clasa a X-a</a>
+            <input type="checkbox" id="btn-2">
+            <ul>
+            </ul>
+        </li>
+        <li>
+            <label for="btn-3" class="show">Clasa a XI-a</label>
+            <a href="#" style="text-decoration:none">Clasa a XI-a</a>
+            <input type="checkbox" id="btn-3">
+            <ul>
+              <li><a href="Izomeria geometrica.html" style="text-decoration:none;padding: 0%;" class="btns">Izomeria<br>optică</a></li>
+              <li><a href="Compusi halogenati.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși halogenați</a></li>
+              <li><a href="Alcooli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Alcooli</a></li>
+              <li><a href="Fenoli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Fenoli</a></li>
+              <li><a href="Amine.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Amine</a></li>
+              <li><a href="Compusi carbonilici.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși<br>carbonilici</a></li>
+            </ul>
+        </li>
+        <li>
+          <label for="btn-5" class="show">Teste de antrenament</label>
+          <a href="#" style="text-decoration:none">Teste de antrenament</a>
+          <input type="checkbox" id="btn-5">
+          <ul>
+            <li><a href="teste anorganica.html" style="text-decoration:none;padding: 0%;" class="btns">Chimie anorganică</a></li>
+            <li><a href="teste organica.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Chimie organică</a></li>
+          </ul>
+      </li>
+        <li>
+          <label for="btn-4" class="show"><a href="manuale.html">Manuale și culegeri</a></label>
+          <a href="manuale.html" style="text-decoration:none">Manuale și culegeri</a>
+          <input type="checkbox" id="btn-4">
+      </li>
+        <li>
+          <label for="btn-4" class="show"><a href="contact.html">Contact</a></label>
+          <a href="contact.html" style="text-decoration:none">Contact</a>
+          <input type="checkbox" id="btn-4">
+
+      </li>
+    </ul>
+</nav>
+    <div id="clockDisplay" class="containerclock"></div>
+    <h1>Amine</h1>
+    <p>Definiție: Aminele sunt compuși organici, care conțin în moleculă gruparea funcțională amino (—NH<sub>2</sub>) sau amino substituită (—NHR, —NR<sub>2</sub>).</p>
+    <p>Aminele pot fi considerate derivați ai amoniacului (NH<sub>3</sub>-), în care atomii de hidrogen sunt înlocuiți cu radicali organici.</p>
+    <img src="43.png" alt="" class="forimgmx">
+    <p>Clasificare:</p>
+    <ul class="showul">
+        <li>După numărul de radicali legați de atomul de azot:
+            <ul class="showul">
+                <li>amine primare:<br><img src="44.png" alt="" class="forimgmx"></li>
+                <li>amine secundare:<br><img src="45.png" alt="" class="forimgmx"></li>
+                <li>amine terțiare:<br><img src="46.png" alt="" class="forimgmx"></li>
+            </ul>
+        </li>
+        <li>După natura radicalilor organici:
+            <ul class="showul">
+                <li>amine alifatice: CH<sub>3</sub>—NH—CH<sub>2</sub>—CH<sub>3</sub> → etilmetilamină (I.U.P.A.C.)</li>
+                <li>amine aromatice: atomul de azot din grupa amino se leagă  numai de cel puțin un nucleu aromatic</li>
+                <li>amine mixte: fenilmetalina (N-metalina)</li>
+            </ul>
+        </li>
+        <li>După numărul de grupe amino din moleculă:
+            <ul class="showul">
+                <li>monoamine — în moleculă se află o singură grupă amino, exemple: metilamina, anilna, etc.</li>
+                <li>poliamine — au în moleculă două sau mai multe grupe amino (diamine, triamine, etc.), exemple:<br><img src="47.png" alt="" class="forimgmx"></li>
+            </ul>
+        </li>
+    </ul>
+    <p><img src="48.png" alt="" class="forimg">Nicotina este un excitant al sistemului nervos. Ea apare în multe plante (de ex. legume), dar este reținută în organism numai din fumul de țigară. Reținerea ei în organism determină în timp bolu canceroase și cardiovasculare.</p>
+    <p>În cazul în care pe un radical hidrocarbonizat se află și alte funcțiuni organic, cele oxigenate (—COOH > >C=O > —OH) au prioritate la denumire față de funcțiunea monovalentă amino, de exemplu denumirea următoarei substanțe va fi: H<sub>2</sub>N—CH<sub>2</sub>—CH<sub>2</sub>—OH 2-aminoetanol (NU 2-hidroxietolamina).</p>
+    <h1>Izomerie</h1>
+    <p>Aminele primare, secundare și terțiare cu aceeași formulă moleculară sunt izomeri.</p>
+    <p>Aminele pot prezenta următoarele tipuri de izomerie:</p>
+    <img src="49.png" alt="" class="forimgmx">
+    <h1>Metode de obținere</h1>
+    <h4>Reducerea nitroderivaților cu hidrogen (în stare născândă)</h4>
+    <p>Hidrogenul se obține din reacția unui metal activ (Zn, Fe, Sn) cu acidul clorhidric : Fe + 2HCl → FeCl<sub>2</sub> + 2[H]</p>
+    <img src="140.png" alt="" class="forimgmx">
+    <h4>Alchilarea amoniacului și a aminelor cu derivați halogenați</h4>
+    <img src="141.png" alt="" class="forimgmx">
+    <p>Observație: dacă în reacția (1) amoniacul este în exces, reacția se oprește în faza de monoalchilare, rezultând amina primară, iar dacă compusul halogenat este în exces, reacția continuă până la obținerea halogenurii cuaternare de amoniu.</p>
+    <h4>Reducerea nitrililor</h4>
+    <img src="142.png" alt="" class="forimgmx">
+    <h1>Proprietăți fizice</h1>
+    <p>La temperatură obișnuită aminele inferioare sunt substanțe gazoase, cu miros asemănător amoniacului, cele superioare sunt solide, iar aminele intermediare sunt lichide și au miros neplăcut, de pește stricat.</p>
+    <p>Punctele de fierbere cresc cu mărimea catenei și cu numărul de grupe amino din moleculă. Pentru aminele izomere, punctele de fierbere cresc în ordinea: amina terțiară < amina secundară <  amina primară.</p>
+    <p>Aminele primare și cele secundare sunt asociate pentru legături de hidrogen. Aminele formează legături de hidrogen și cu moleculele de apă, dar numai aminele inferioare sunt solubile în apă. Solubilitatea aminelor în apă scade cu creșterea radicalului hidrocarbonat. Aminele aromatice sunt parțiar solubile în apă (de ex. soluția saturată de anilină are concentrația de 3,4%).</p>
+    <p>Anilina doar proaspăt preparată este un lichior incolor. În timp însă din cauza oxidării cu aerul se colorează în galben sau galben-brun.</p>
+    <h1>Proprietăți chimice</h1>
+    <p>Proprietățile chimice ale aminelor se datorează grupei / grupelor funcționale amino –NH<sub>2</sub> din moleculele lor.</p>
+    <h4>Caracterul bazic al aminelor</h4>
+    <p>Aminele au caracter bazic datorită perechii de electroni neparticipante a atomului de azot care poate lega coordinativ un proton.</p>
+    <p>La dizolvarea în apă, aminele solubile ionizează:</p>
+    <img src="143.png" alt="" class="forimgmx">
+    <p>Aminele reacționează cu acizii minerali (HCl, H<sub>2</sub>SO<sub>4</sub>) primind ușor protonii cedați de acizi și formează săruri de amoniu (substanțe ionice), solubile în apă.</p>
+    <img src="144.png" alt="" class="forimgx">
+    <p>Bazicitatea aminelor crește în ordinea:</p>
+    <img src="145.png" alt="" class="forimgmx">
+    <p>Aminele aromatice, datorită caracterului bazic mai scăzut au și o solubilitate mai mică în apă.</p>
+    <p>Aminele se pot obține din halogenurile de amoniu cu baze tari.</p>
+    <img src="146.png" alt="" class="forimgmx">
+    <h4>Alchilarea aminelor cu derivați halogenați</h4>
+    <p>Aminele primare, secundare și terțiare se alchilează cu derivați halogenați.</p>
+    <img src="147.png" alt="" class="forimgx">
+    <h4>Acilarea aminelor</h4>
+    <p>Aminele primare și secundare reacționează ușor cu halogenurile acizilor carboxilici și anhidridele acizilor carboxilici, formând amine acilate. Reacția poate avea loc și cu acizi carboxilici, dar numai în condiții energice. Aminele terțiare nu pot fi acilate, deoarece nu au atom de hidrogen legat de atomul de azot. Atomul sau atomii de hidrogen de la grupa amino sunt substituiți cu grupa R – CO – (acil), unde R poate fi aromatic sau alifatic. Prin acilare aminele își pierd caracterul bazic. Aminele acilate sunt amide substituite la azot.</p>
+    <img src="148.png" alt="" class="forimgmx">
+    <p>Aminele primare pot fi acilate în două trepte cu exces de reactant (clorură acidă sau anhidridă).</p>
+    <img src="149.png" alt="" class="forimgx"><br>
+    <img src="150.png" alt="" class="forimgx">
+    <p>Aminele acilate hidrolizează ușor regenerând amina.</p>
+    <img src="151.png" alt="" class="forimgx">
+    <p>Prin acilarea aminelor se protejează adesea grupa amino față de reactanții care pot modifica sau distruge această grupă. Acilarea (protejarea grupei amino) se aplică întotdeauna înainte de oxidare, clorurare, nitrare, etc.</p>
+    <img src="152.png" alt="" class="forimgx">
+    <h4>Reacția de substituție</h4>
+    <h5>Reacția aminelor primare alifatice cu acidul azotos</h5>
+    <p>Aminele primare alifatice tratate cu acid azotos formează alcooli:</p>
+    <img src="153.png" alt="" class="forimgmxx">
+    <h4>Reactanții specifice aminelor aromatice</h4>
+    <p>Aminele aromatice de tipul anilinei pot da și reacții de substituție la nucleu sau în funcție de reactantul folosit, reacții de oxidare.</p>
+    <p>Prin încălzirea anilinei cu acid sulfuric concentrat la 180<sup>0</sup>C, se obține acidul p-anilinsulfonic sau acidul sulfanilic:</p>
+    <img src="154.png" alt="" class="forimgmx">
+    <p>La tratarea anilinei cu acid sulfuric la rece se formează sulfatul de anilină H<sub>5</sub>C<sub>6</sub>–NH<sub>3</sub>]+HSO<sub>4</sub>− (prin reacție de neutralizare), dar acesta prin încălzire la 180<sup>0</sup>C formează acidul sulfanilic sau acid p-anilinsulfonic, printr-o reacție de transpoziție.</p>
+    <p>Anilina se bromurează ușor la nucleu.</p>
+    <img src="155.png" alt="" class="forimgmx">
+    <h4>Reacția de diazotare și cuplare</h4>
+    <h5>Reacția aminelor primare aromatice cu acidul azotos</h5>
+    <p>Aminele primare aromatice în reacție cu acidul azotos, la temperaturi sub 5<sup>0</sup>C, formează săruri de diazoniu.</p>
+    <img src="156.png" alt="" class="forimgx">
+    <p>Observație: acidul azotos se obține în mediul de reacție din azotit de sodiu și un acid mineral (de obicei se lucrează cu HCl în exces). Sărurile de aren diazoniu sunt în marea majoritate solubile în apă și sunt stabile numai în soluții apoase la temperaturi scăzute (0 - 5<sup>0</sup>C). În stare solidă sau prin concentrare sărurile de diazoniu explodează.</p>
+    <p>În funcție de reacția utilizată, grupa diazo poate fi distrusă sau conservată. Distrugerea se poate face prin reacția cu KI, CuCN, H<sub>2</sub>O (la 50<sup>0</sup>C):</p>
+    <img src="157.png" alt="" class="forimgx">
+    <p>Conservarea grupe diazo se face prin cuplare (adesea pentru obținerea coloranților). Sărurile de arendiazoniu dau reacții de cuplare la rece (0-5<sup>0</sup>C) cu amine aromatice sau cu fenoli.</p>
+    <p>Aminele aromatice dau reacția de cuplare în poziția para față de grupa amino:</p>
+    <img src="158.png" alt="" class="forimgx"><br>
+    <img src="159.png" alt="" class="forimgx">
+    <p>Fenolii dau reacția de cuplare în poziția para față de grupa hidroxil, iar dacă aceasta este ocupată, reacția este orientată în poziția orto față de hidroxil.</p>
+    <img src="160.png" alt="" class="forimgx">
+    <p>Metiloranjul se obține prin diazotarea acidului sulfanilic și cuplarea cu fenildimetilamina. Metiloranjul este un indicator acido-bazic. În mediul bazic are culoare galbenă, iar în mediu acid este roșu. Domeniul de viraj apare în intervalul de pH 3,2-4,4.</p>
+    <img src="161.png" alt="" class="forimgx">
+    <script src="app.js"></script>
+</body>
+</html>

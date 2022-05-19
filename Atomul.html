@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="StyleLectii.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <title>Atomul</title>
+</head>
+<body class="container-fluid" onload="renderTime()">
+  <nav>
+    <div class="logo"><img src="logo.png" alt=""></div>
+    <label for="btn" class="icon">
+        <span class="fas fa-bars"></span>
+    </label>
+    <input type="checkbox" id="btn">
+    <ul>
+       <li><a href="index.html" style="text-decoration:none">Acasa</a></li>
+       <li>
+           <label for="btn-1" class="show">Clasa a IX-a</label>
+           <a href="#" style="text-decoration:none">Clasa a IX-a</a>
+           <input type="checkbox" id="btn-1">
+           <ul>
+               <li><a href="Atomul.html" style="text-decoration:none">Atomul</a></li>
+               <li><a href="Proprietatile elementelor.html" style="text-decoration:none;padding: 0%;" class="btns">Proprietățile elementelor</a></li>
+               <li><a href="corelatii.html" style="text-decoration:none;padding: 0%;" class="btns">Corelații între structura învelișului de electroni, poziția în tabelul periodic și proprietațile elementelor</a></li>
+           </ul>
+        </li>
+        <li>
+            <label for="btn-2" class="show">Clasa a X-a</label>
+            <a href="#" style="text-decoration:none">Clasa a X-a</a>
+            <input type="checkbox" id="btn-2">
+            <ul>
+            </ul>
+        </li>
+        <li>
+            <label for="btn-3" class="show">Clasa a XI-a</label>
+            <a href="#" style="text-decoration:none">Clasa a XI-a</a>
+            <input type="checkbox" id="btn-3">
+            <ul>
+              <li><a href="Izomeria geometrica.html" style="text-decoration:none;padding: 0%;" class="btns">Izomeria<br>optică</a></li>
+              <li><a href="Compusi halogenati.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși halogenați</a></li>
+              <li><a href="Alcooli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Alcooli</a></li>
+              <li><a href="Fenoli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Fenoli</a></li>
+              <li><a href="Amine.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Amine</a></li>
+              <li><a href="Compusi carbonilici.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși<br>carbonilici</a></li>
+            </ul>
+        </li>
+        <li>
+          <label for="btn-5" class="show">Teste de antrenament</label>
+          <a href="#" style="text-decoration:none">Teste de antrenament</a>
+          <input type="checkbox" id="btn-5">
+          <ul>
+            <li><a href="teste anorganica.html" style="text-decoration:none;padding: 0%;" class="btns">Chimie anorganică</a></li>
+            <li><a href="teste organica.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Chimie organică</a></li>
+          </ul>
+      </li>
+        <li>
+          <label for="btn-4" class="show"><a href="manuale.html">Manuale și culegeri</a></label>
+          <a href="manuale.html" style="text-decoration:none">Manuale și culegeri</a>
+          <input type="checkbox" id="btn-4">
+      </li>
+        <li>
+          <label for="btn-4" class="show"><a href="contact.html">Contact</a></label>
+          <a href="contact.html" style="text-decoration:none">Contact</a>
+          <input type="checkbox" id="btn-4">
+
+      </li>
+    </ul>
+</nav>
+<div id="clockDisplay" class="containerclock"></div>
+    <h1>Atomul</h1>
+    <p>Definiție: Atomul este cea mai mică parte a materiei care nu se mai poate divide prin metode chimice obișnuite.</p>
+    <p>Atomul este format din:</p>
+    <ul>
+        <li>Nucleu (care contine neutroni si protoni)</li>
+        <li>Învelisul de electroni ( care contine electroni)</li>
+    </ul>
+    <p>Nucleonii sunt particulele nucleului (neutronii și protonii)</p>
+    <p>Protonii, neutronii si electronii sunt particule funcamentale ale atomului</p>
+    <table class="table-striped w3-row tablefix center">
+        <tr>
+          <th>Particule</th>
+          <th>Sarcina relativă</th>
+          <th>Sarcina reală</th>
+          <th>Masa relativă</th>
+          <th>Masa reală</th>
+        </tr>
+        <tr>
+          <td>proton</td>
+          <td>+1</td>
+          <td>-1,6x10<sup>-19</sup>C</td>
+          <td>1</td>
+          <td>1,67x10<sup>-27</sup>kg</td>
+        </tr>
+        <tr>
+          <td>neutron</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1,67x10<sup>-27</sup>kg</td>
+        </tr>
+        <tr>
+          <td>electron</td>
+          <td>-1</td>
+          <td>1,6x10<sup>-19</sup>C</td>
+          <td>0</td>
+          <td>9,1x10<sup>-31</sup>kg</td>
+        </tr>
+      </table>
+      <p>Numărul protonilor din nucleu este egal cu numărul electronilor din învelișul de electroni</p>
+      <p>Atomul este neutru din punct de vedere electric.</p>
+      <p>Numărul protonilor din nucleu se notează cu Z și se numește NUMĂR ATOMIC.</p>
+      <p>Numărul neutronilor din nucleu se notează cu N sau n</p>
+      <p>Suma dintre numărul protonilor și numărul neutronilor din nucleu se notează cu A și se numește NUMĂR DE MASĂ</p>
+      <h2>Definiția unui element chimic:</h2>
+      <p>- sunt toți atomii care au același număr atomic Z;</p>
+      <p>Definiția elementului oxigen (O): sunt toți atomii care au opt protoni în nucleu;</p>
+      <p>Definiția elementului aluminiu (Al): sunt toți atomii care au 13 protoni în nucleu;</p>
+      <p>Definiția elementului calciu (Ca):  sunt toți atomi care au 20 de protoni în nucleu</p>
+      <h2>Izotopii</h2>
+      <p>- izotopii sunt specii de atomi care au același număr atomic Z, dar număr de masă A, diferit.</p>
+      <p>Masa atomică a unui element se calculează în funcție de masa și proporția izotopilor.</p>
+      <img src="1.png" alt="" >
+      <p>Unde:</p>
+      <ul class="showul">
+        <li>a/100- procentul de masa al primului izotop x<sub>1</sub></li>
+        <li>b/100- procentul de masa al celui de al doilea izotop x<sub>2</sub></li>
+      </ul>
+      <p>Hidrogenul are trei izotopi:</p>
+      <img src="2.png" alt="">
+      <h2>Numarul lui Avogadro</h2>
+      <p>N<sub>A</sub>=6,022x10<sup>23</sup> particule/mol</p>
+      <p>Numărul lui Avogadro reprezintă numărul de particule ( ioni, atomi sau molecule) dintr-un mol de substanță.</p>
+      <h2>Învelisul de electroni</h2>
+      <p>Electronii se găsesc așezați ordonat pe straturi, în învelișul de electroni al atomului.</p>
+      <p>În atom pot exista maximum 7 straturi.</p>
+      <img src="4.png" alt="" >
+      <p>Straturile se diferențiază prin:</p>
+      <ol>
+        <li>numărul maxim de electroni<br>-se calculeaza cu formula N=2n<sup>2</sup><br>(N = numărul maxim de electroni)<br>n= numărul stratului<br>Pe stratul K încap maximum 2 eˉ;<br>Pe stratul L încap maximum  8 eˉ;<br>Pe stratul M încap maximum  18 eˉ<br>Pe stratul N încap maximum  32 eˉ<br>Pe stratul O încap maximum  50 eˉ</li>
+        <li>distanța față de nucleu<br>Distanțele dintre straturi sunt foarte mari, comparativ cu mărimea particulelor.</li>
+        <li>energia electronilor<br>Cea mai mică energie o au electronii de pe primul strat, iar cea mai mare energie o au electronii de ultimul strat, numit și strat de valență.</li>
+        <li>numărul de substraturi și numărul de orbitali<br>Orbitalul reprezintă spațiul din jurul nucleului în care vom întâlni electronul cu cea mai mare probabilitate.<br>Orbitalul se reprezintă schematic, printr-o pătrățică de matematică, o liniuță sau un cerculeț:<br><img src="5.png" alt=""></li>
+      </ol>
+  <p><b>Principiul lui Pauli:</b>într-un orbital încap maximum 2 electroni de spin opus.</p>
+  <p>Mișcarea de spin reprezintă mișcarea în jurul propriei axe.</p>
+  <p>Există patru tipuri de orbitali:</p>
+  <ul class="showul">
+    <li>s</li>
+    <li>p</li>
+    <li>d</li>
+    <li>f</li>
+  </ul>
+  <p>Exemplu de orbital de tip s:</p>
+  <img src="50.png" alt="" class="forimgms">
+  <table class="table-striped w3-row tablefix center">
+    <tr>
+      <th>Substratul</th>
+      <th>Numărul de orbitali</th>
+      <th>Numărul maxim de electroni</th>
+    </tr>
+    <tr>
+      <td>s</td>
+      <td>1s</td>
+      <td>2eˉ</td>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td>3p</td>
+      <td>6eˉ</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td>5d</td>
+      <td>10eˉ</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>7f</td>
+      <td>14eˉ</td>
+    </tr>
+  </table>
+  <br>
+  <table class="table-striped w3-row tablefix center">
+<tr>
+  <th>Stratul</th>
+  <th>Numărul de substraturi</th>
+</tr>
+<tr>
+  <td>1</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>2</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>3</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>4</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>5</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>6</td>
+</tr>
+  </table>
+<h2>Configurația electronică</h2>
+<img src="51.png" alt="">
+<p><b>Principiul lui Hund:</b>într-un substrat, întâi se ocupă fiecare orbital cu câte un electron și după aceea se trece la completarea cu cel de-al doilea electron.</p>
+<p>Un substrat pe jumătate ocupat cu electroni sau complet ocupat cu electroni este foarte stabil.</p>
+<script src="app.js"></script>
+</body>
+</html>
