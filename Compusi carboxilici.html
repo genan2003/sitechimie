@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Invata chimie este un site care are ca scop aprofundarea cunostintelor elevilor la chimie cat si un suport pentru elevii care dau admitere la chimie">
+    <link rel="stylesheet" href="StyleLectii.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Compuși carbonilici</title>
+  </head>
+  <body onload="newQuote()">
+    <nav>
+      <div class="logo"><img src="logo.png" alt=""></div>
+      <label for="btn" class="icon">
+          <span class="fas fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul>
+         <li><a href="index.html" style="text-decoration:none">Acasa</a></li>
+         <li>
+             <label for="btn-1" class="show">Clasa a IX-a</label>
+             <a href="#" style="text-decoration:none">Clasa a IX-a</a>
+             <input type="checkbox" id="btn-1">
+             <ul>
+                 <li><a href="Atomul.html" style="text-decoration:none">Atomul</a></li>
+                 <li><a href="Proprietatile elementelor.html" style="text-decoration:none;padding: 0%;" class="btns">Proprietățile elementelor</a></li>
+                 <li><a href="corelatii.html" style="text-decoration:none;padding: 0%;" class="btns">Corelații între structura învelișului de electroni, poziția în tabelul periodic și proprietațile elementelor</a></li>
+             </ul>
+          </li>
+          <li>
+              <label for="btn-2" class="show">Clasa a X-a</label>
+              <a href="#" style="text-decoration:none">Clasa a X-a</a>
+              <input type="checkbox" id="btn-2">
+              <ul>
+              </ul>
+          </li>
+          <li>
+              <label for="btn-3" class="show">Clasa a XI-a</label>
+              <a href="#" style="text-decoration:none">Clasa a XI-a</a>
+              <input type="checkbox" id="btn-3">
+              <ul>
+                <li><a href="Izomeria geometrica.html" style="text-decoration:none;padding: 0%;" class="btns">Izomeria<br>optică</a></li>
+                <li><a href="Compusi halogenati.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși halogenați</a></li>
+                <li><a href="Alcooli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Alcooli</a></li>
+                <li><a href="Fenoli.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Fenoli</a></li>
+                <li><a href="Amine.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Amine</a></li>
+                <li><a href="Compusi carbonilici.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși<br>carboxilici</a></li>
+                <li><a href="Compusi carboxilici.html" style="text-decoration:none;padding: 0%;" class="btns">Compuși<br>carbonilici</a></li>
+
+                
+              </ul>
+          </li>
+          <li>
+            <label for="btn-5" class="show">Teste de antrenament</label>
+            <a href="#" style="text-decoration:none">Teste de antrenament</a>
+            <input type="checkbox" id="btn-5">
+            <ul>
+              <li><a href="teste anorganica.html" style="text-decoration:none;padding: 0%;" class="btns">Chimie anorganică</a></li>
+              <li><a href="teste organica.html" style="text-decoration:none;padding: 0%;line-height: 50px;" class="btns">Chimie organică</a></li>
+            </ul>
+        </li>
+          <li>
+            <label for="btn-4" class="show"><a href="manuale.html">Manuale și culegeri</a></label>
+            <a href="manuale.html" style="text-decoration:none">Manuale și culegeri</a>
+            <input type="checkbox" id="btn-4">
+        </li>
+          <li>
+            <label for="btn-4" class="show"><a href="contact.html">Contact</a></label>
+            <a href="contact.html" style="text-decoration:none">Contact</a>
+            <input type="checkbox" id="btn-4">
+
+        </li>
+      </ul>
+  </nav>
+    <div class="bg-image container-fluid">
+        <h1>Compuși carbonilici</h1>
+        <p>Definiție:   Compușii	carbonilici	sunt	compuși	organici,	care	conțin în moleculă grupa funcțională carbonil (>C=O) .</p>
+        <p>Compușii carbonilici sunt de două feluri: ALDEHIDE și CETONE.</p>
+        <img src="167.png" alt="" class="forimgmxx">
+        <p>Formula	generală	pentru	compușii	carbonilici	cu	catene	saturate	aciclice	este: C<sub>n</sub>H<sub>2n</sub>O.</p>
+        <h1>Clasificare si nomenclatură</h1>
+        <ul class="showul">
+            <li>După natura radicalului / radicalilor, compușii carbonilici pot fi:
+                <ul class="showul">
+                    <li>alifatici saturați: CH<sub>3</sub> – CH<sub>2</sub> – CH<sub>2</sub> – CHO butanal (aldehidă butirică)<br><img src="168.png" alt="" class="forimgmx"></li>
+                    <li>alifatici nesaturați: <img src="169.png" alt="" class="forimgm"></li>
+                    <li>aromatici: <img src="170.png" alt="" class="forimgmx"></li>
+                </ul>
+            </li>
+            <li>după numărul grupelor carbonil, pot fi:
+              <ul class="showul">
+                <li>monocarbonilici: conțin o singură grupă carbonil de tip aldehidă sau cetonă;</li>
+                <li>di- sau policarbonilici : conțin două sau mai multe grupe carbonil:
+                  <img src="171.png" alt="" class="forimgx">
+                </li>
+              </ul>
+            </li>
+        </ul>
+        <p>Observație: Grupa carbonil are prioritate la numerotarea catenei față de grupele funcționale învățate (halogeni, nitro, alcool, fenol, amino), față de radicalii hidrocarbonați, legăturile duble sau triple.</p>
+        <p>Izomerie – compușii carbonilici pot da izomerie de catenă, de funcțiune, geometrică și optică.</p>
+        <h1>Proprietăți fizice</h1>
+        <p>La temperatură obișnuită, aldehida formică este gazoasă, ceilalți compuși carbonilici inferiori sunt lichizi iar cei superiori sunt solizi. Punctele de fierbere și de topire cresc cu masa moleculară și sunt mai mari decât ale alcanilor corespunzători (datorită masei și polarității moleculei).</p>
+        <p>Între moleculele compușilor carbonilici apar forțe van der Waals (legături dipol-dipol și forțe de dispersie) și de aceea punctele de fierbere sunt mai mici decât ale alcoolilor și acizilor carboxilici cu același număr de atomi de carbon, ale căror molecule sunt asociate prin legături de hidrogen, mult mai puternice decât forțele van der Waals.</p>
+        <p>Termenii inferiori sunt solubili în apă, deoarece între molecule compușilor carbonilici și apă se stabilesc legături de hidrogen. Solubilitatea compușilor carbonilici în apă scade cu creșterea masei moleculare (cu creșterea catenei, a radicalului hidrocarbonat, care este hidrofob). Primii trei termeni (aldehida formică, aldehida acetică și acetona) sunt miscibili cu apa.</p>
+        <img src="172.png" alt="" class="forimgm">
+        <p>Compușii carbonilici sunt solubili în solvenți organici, iar cei lichizi sunt buni solvenți pentru lacuri și vopsele.</p>
+        <p>Compușii carbonilici au mirosuri specifice, uneori plăcute alteori dezagreabile. Aldehida acetică are miros de mere verzi, aldehida benzoică de migdale amare, iar aldehida formică are un miros asemănător formolului (soluție de aldehidă formică 40%).</p>
+        <h1>Proprietăți chimice</h1>
+        <ol type="A">
+          <li>Reacția de condensare
+            <br>
+            Reacția în care două substanțe organice se combină într-o moleculă mai mare, urmată adesea de eliminarea unor molecule mai mici, reprezintă o reacție de condensare
+            <ol type="a">
+              <li>condensarea	aldolică	și	crotonică
+                <br>
+                Reacția are loc între doi compuși carbonilici, cu eliminarea unei molecule de apă. Procesul decurge în două etape:
+                <ol type="1">
+                  <li>adiția aldolică
+                    <br>
+                    Unul dintre compușii carbonilici participă la reacție cu grupa carbonil și se numește componentă carbonilică, iar celalalt compus carbonilic participă cu atomul de carbon vecin grupei carbonil CH, CH<sub>2</sub> sau CH<sub>3</sub> (acești atomi de hidrogen au reactivitate mai mare) și se numește componentă metilenică. Componenta metilenică se adiționează la grupa carbonil a componentei carbonilice.
+                    <br>
+                    <img src="173.png" alt="" class="forimgx">
+                    <br>
+                    Aldolii au două grupe funcționale. O grupă funcțională de tip aldehidă și una de tip alcool (hidroxialdehidă), iar cetolii o grupă funcțională de tip cetonă și una de tip alcool (hidroxicetonă).Reacția de adiție poate avea loc între:
+                    <ul class="showul">
+                      <li>două aldehide identice
+                        <br>
+                        <img src="174.png" alt="" class="forimgx">
+                      </li>
+                      <li>două cetone identice
+                        <br>
+                        <img src="175.png" alt="" class="forimgx">
+                      </li>
+                      <li>o aldehidă și o cetonă sau două aldehide diferite sau două cetone diferite
+                        <br>
+                        Dacă la reacție participă doi compuși carbonilici diferiți, se formează (teoretic) amestecul a patru produși de reacție. Totuși în cazul în care avem o aldehidă și o cetonă, se obțin în cantitate mai mare produșii în care aldehida a fost componentă carbonilică, deoarece aldehidele au o reactivitate mai mare.
+                        <br>
+                        <img src="176.png" alt="" class="forimgx">
+                        <br>
+                        <b>Observație</b>: aldehidele și cetonele care nu conțin hidrogen la atomul de carbon din poziția α față de grupa carbonil pot fi numai componente carbonilice (nu pot fi componente metilenice), de ex. formaldehida, benzaldehida.
+                      </li>
+                    </ul>
+                    <li>deshidratarea aldolului (reacția de crotonizare)
+                      <br>
+                      Reacția de crotonizare constă în deshidratarea aldolului sau cetolului cu formarea unui compus α-β-nesaturat, prin eliminarea unei molecule de apă între grupa hidroxil (nou formată prin adiția aldolică) și un atom de hidrogen din poziția vecină grupei carbonil (poziția α).
+                      <br>
+                      <img src="177.png" alt="" class="forimgx"><br>
+                      <img src="178.png" alt="" class="forimgx">
+                      <br>
+                     
+                    </li>
+                  </li>
+                </ol>
+              </li>
+              <li>condensarea	aldehidei	formice	cu	fenolul
+                <br>
+                Revezi obținerea novolacului și a bachelitei învățate la fenoli.
+              </li>
+            </ol>
+          </li>
+          <li>
+            Reacții	specifice	aldehidelor
+            <ul class="showul">
+              <li>Reacții de oxidare ale aldehidelor
+                <br>
+                Aldehidele se oxidează ușor la acizi carboxilici în comparație cu cetonele. Deci aldehidele au caracter reducător (față de cetone care nu au). Aldehidele pot fi oxidate cu:
+                <ol type="a">
+                  <li>soluție de permanganat de potasiu și acid sulfuric:
+                    <img src="179.png" alt="" class="forimgx">
+                  </li>
+                  <li>
+                    soluție de bicromat de potasiu și acid sulfuric:
+                    <img src="180.png" alt="" class="forimgx">
+                  </li>
+                  <li>
+                    reactiv Tollens – soluție de hidroxid de diaminoargint (I)
+                    <img src="181.png" alt="" class="forimgx">
+                  </li>
+                  <li>cu reactiv Fehling:
+                    <img src="182.png" alt="" class="forimgx">
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <h1>Reacții de recunoaștere a compușilor carbonilici</h1>
+        <p>Pentru recunoașterea compușilor carbonilici se folosesc reacțiile chimice specifice acestor compuși, care au loc cu schimbări de culoare sau cu formarea unor precipitate ușor de identificat:</p>
+        <ol type="a">
+          <li>Reacția cu reactivul Tollens
+            <br>
+            Aldehidele pot fi recunoscute cu reactivul Tollens. Se formează oglinda de argint (dacă eprubeta este ușor încălzită și ținută cât mai nemișcată) sau precipitatul negru de argint. Cetonele nu dau reacția cu reactivul Tollens. (vezi mai sus reacția de oxidare a aldehidelor cu reactiv Tollens).
+          </li>
+          <li>
+            Reacția cu reactivul Fehling
+            <br>
+            Aldehidele pot fi recunoscute cu reactivul Fehling. La încălzire se formează precipitatul roșu de oxid cupros (Cu<sub>2</sub>O). Cetonele nu dau această reacție. (vezi mai sus reacția de oxidare a aldehidelor cu reactiv Fehling).
+          </li>
+        </ol>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
